@@ -1,0 +1,12 @@
+.container {
+    @apply flex;
+
+    p {
+        @apply text-5xl;
+        font-family: "Staatliches";
+    }
+}
+
+.list {
+    @apply flex gap-4;
+}

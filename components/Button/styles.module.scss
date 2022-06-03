@@ -1,0 +1,7 @@
+.rounded {
+    @apply rounded-full w-20 h-20 grid place-content-center;
+}
+
+.transparent {
+    @apply border py-3 px-8 border-teal-600 ml-5 mr-5 text-xs md:text-lg;
+}
