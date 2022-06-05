@@ -20,8 +20,8 @@ const Layout = ({ title, description, children }) => {
         </div>
         <div className={styles.boxPalette}>
           <div className={styles.darkPalette}></div>
-          <div></div>
-          <div></div>
+          <div className={styles.lightPalette}></div>
+          <div className={styles.intermediatePalette}></div>
         </div>
         </main>
         <Footer />

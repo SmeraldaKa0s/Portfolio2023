@@ -7,7 +7,7 @@ const Button = ({ title, type, rounded, className, onClick, iconId}) => {
       onClick={onClick}
       className={`${className} ${styles[type]} ${rounded ? styles.rounded : ""}`}
     >
-      { iconId && <Icon id={iconId} />}
+      { iconId && <Icon id={iconId} className="mr-1"/>}
       {title}
     </button>
   );  
