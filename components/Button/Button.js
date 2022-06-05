@@ -1,11 +1,13 @@
+import Icon from "../Icon";
 import styles from "./styles.module.scss";
 
-const Button = ({ title, type, rounded, className, onClick }) => {
+const Button = ({ title, type, rounded, className, onClick, iconId}) => {
   return (
     <button
       onClick={onClick}
       className={`${className} ${styles[type]} ${rounded ? styles.rounded : ""}`}
     >
+      { iconId && <Icon id={iconId} />}
       {title}
     </button>
   );  
@@ -14,6 +16,7 @@ const Button = ({ title, type, rounded, className, onClick }) => {
 Button.defaultProps = {
   type: "transparent",
   rounded: false,
+  className: "",
 };
 
 export default Button;

@@ -1,0 +1,19 @@
+.container {
+    @apply   w-0 fixed top-0 left-0 right-0 overflow-hidden;
+    bottom: 40%;
+    transition: 500ms; 
+
+    .boxTop {
+        @apply w-full h-screen bg-violet-300;
+    }
+
+    .boxBottom {
+        @apply bg-black; 
+    }
+    
+}
+
+.open {
+    @apply w-screen; 
+    transition: 500ms; 
+}

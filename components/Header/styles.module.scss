@@ -1,0 +1,22 @@
+.container {
+    @apply mt-8 flex flex-col items-center;
+
+    p {
+        @apply mt-8 text-sm text-center;
+        max-width: 275px;
+    }
+
+}
+.box {
+    @apply ml-9; 
+
+}
+
+.button {
+    @apply flex text-sm pt-5 relative;
+}
+
+.underLine {
+    @apply absolute w-1/5 left-16 bg-black;
+    height: 1px;
+}

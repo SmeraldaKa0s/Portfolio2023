@@ -1,4 +1,16 @@
 .container {
     @apply bg-orange-100 border-2 border-indigo-300 m-5 flex flex-col relative;
     min-height: calc(100vh - 2.5rem);
+
+.boxSound {
+    @apply w-12 h-10 bg-orange-100 border-2 border-indigo-300 flex justify-center items-center absolute -bottom-2 -right-3;
+}
+
+.boxPalette {
+    @apply w-10 h-40 bg-orange-100 border-2 border-indigo-300 flex absolute -left-7 bottom-8;
+
+    .darkPalette {
+        @apply w-5 h-5 bg-violet-900; 
+    }
+}
 }

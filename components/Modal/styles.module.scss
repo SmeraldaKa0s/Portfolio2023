@@ -1,5 +1,6 @@
 .container {
   @apply absolute bg-orange-100 top-0 left-0 w-full h-full box-border flex flex-col justify-center items-center text-center;
+  z-index:10; 
 
   p {
     @apply text-base md:text-2xl leading-loose;

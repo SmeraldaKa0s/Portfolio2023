@@ -1,5 +1,5 @@
 .container {
-    @apply flex;
+    @apply flex justify-between pl-6 pt-6;
 
     p {
         @apply text-5xl;
@@ -7,6 +7,19 @@
     }
 }
 
+.burgerMenu {
+    @apply flex justify-center flex-col pr-6 lg:hidden items-end;
+
+    div {
+        @apply h-1 w-8 bg-lime-700;
+        margin-top: 2px;
+    }
+
+    .line {
+        @apply w-10;
+    }
+}
+
 .list {
-    @apply flex gap-4;
+    @apply gap-4 hidden lg:flex;
 }
