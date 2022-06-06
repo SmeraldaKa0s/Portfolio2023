@@ -1,6 +1,6 @@
 .container {
-    @apply bg-orange-100 border-2 border-indigo-300 m-5 flex flex-col relative;
-    min-height: calc(100vh - 2.5rem);
+    @apply bg-orange-100 border-2 border-indigo-300 m-4 flex flex-col relative;
+    min-height: calc(100vh - 30px);
 
     .boxSound {
         @apply w-12 h-10 bg-orange-100 border-2 border-indigo-300 flex justify-center items-center absolute -bottom-2 -right-3;

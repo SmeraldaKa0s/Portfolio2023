@@ -1,9 +1,9 @@
 .container {
-    @apply mt-8 flex flex-col items-center;
+    @apply mt-11 flex flex-col items-center;
 
     p {
-        @apply mt-8 text-sm text-center;
-        max-width: 275px;
+        @apply mt-11 text-sm text-center;
+        max-width: 300px;
     }
 
 }
