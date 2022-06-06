@@ -1,0 +1,26 @@
+.container {
+    @apply mt-11 flex flex-col items-center;
+
+    .image {
+        @apply static;
+    }
+
+    p {
+        @apply mt-11 text-sm text-center;
+        max-width: 300px;
+    }
+
+}
+.box {
+    @apply ml-9; 
+
+}
+
+.button {
+    @apply flex text-sm pt-6 relative mt-4 right-9;
+}
+
+.underLine {
+    @apply absolute w-1/5 left-16 bg-black;
+    height: 1px;
+}

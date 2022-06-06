@@ -1,0 +1,58 @@
+.container {
+    @apply w-0 fixed top-0 left-0 right-0 h-screen;
+    z-index: 100;
+
+    .buttonClose {
+        @apply hidden top-12 right-12;
+    }
+
+    
+    .boxTop {
+        @apply relative w-0 h-p55 bg-violet-300 transition-all ease-out duration-500;
+    }
+    
+    .title {
+        @apply hidden top-11 left-11 text-5xl;
+        font-family: "Staatliches";
+    }
+
+    .boxOptions {
+        @apply hidden bottom-16 left-11  flex-col text-2xl font-medium;
+       
+        a {
+            @apply pt-9;
+        }
+    }
+
+    .colorText {
+        @apply text-neutral-100; 
+    }
+
+    .boxBottom {
+        @apply absolute w-screen h-p45 bg-black transition-all ease-out duration-500 origin-right translate-x-full;
+    }
+}
+
+.open {
+    @apply w-screen;
+
+    .buttonClose {
+        @apply block absolute;
+    }
+    
+    .boxTop {
+        @apply w-screen overflow-hidden transition-all ease-out duration-500;
+    }
+    
+    .title {
+        @apply block absolute;
+    }
+
+    .boxOptions {
+        @apply flex absolute;
+    }
+
+    .boxBottom {
+        @apply transform-none transition-all ease-out duration-500;
+    }
+}

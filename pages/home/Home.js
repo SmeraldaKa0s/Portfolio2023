@@ -1,38 +1,28 @@
-import Image from "next/image";
-import styles from "../../styles/Home.module.scss";
-import Link from "next/link";
-import Placeinit from "../../components/Placeinit";
+import { useState } from "react";
+import Modal from "../../components/Modal";
+import Layout from "../../components/Layout";
+import styles from "./styles.module.scss";
+import Header from "../../components/Header";
+
 
 const Home = () => {
+  const [modalOpen, setModalOpen] = useState(true);
+
+  const handleClose = () => {
+    setModalOpen(false);
+  };
+
   return (
-    <>
-      <Placeinit />
-
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <Link href="/lesli">CLick Here</Link>
-        </main>
-
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
-        </footer>
-      </div>
-    </>
+    <Layout title="Home">
+      <Header 
+      image="/Images/belaLugosi.jpeg"
+      caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+      eiusmod  tempor incididunt ut labore et labore. "/>
+      {modalOpen && <Modal handleClose={handleClose} />}
+    </Layout>
   );
 };
 
 export default Home;
+//TODOS LOS ARCHIVOS TIENEN QUE TENER UNA LINEA VACIA ABAJO

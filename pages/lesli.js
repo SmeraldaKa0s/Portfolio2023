@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
-export default function Home() {
+export default function Lesli() {
   return (
     <div className="name">
       LESLI
