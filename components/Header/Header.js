@@ -6,7 +6,7 @@ const Header = ({ image, caption }) => {
   return (
     <header>
       <div className={styles.container}>
-        <Image src={image} width="370" height="267" className={styles.image}/>
+        <Image src={image} width="370" height="267" className={styles.image} alt="retrato"/>
         <p>{caption}</p>
       </div>
       <div className={styles.box}>
