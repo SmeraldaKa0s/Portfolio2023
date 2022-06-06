@@ -6,7 +6,7 @@ const Modal = ({handleClose}) => {
     <div className={styles.container}>
       <p className={styles.caption}>Welcome to Alekxa Porfolio.</p>
       <p>This webside plays background music.</p>
-      <p>Please select 'off' if you don't want to listen to music.</p>
+      <p>Please select &apos;off&apos; if you don&apos;t want to listen to music.</p>
 
       <div className={styles.box}>
         <Button
