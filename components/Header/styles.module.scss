@@ -1,6 +1,10 @@
 .container {
     @apply mt-11 flex flex-col items-center;
 
+    .image {
+        @apply static;
+    }
+
     p {
         @apply mt-11 text-sm text-center;
         max-width: 300px;
@@ -13,7 +17,7 @@
 }
 
 .button {
-    @apply flex text-sm pt-5 relative;
+    @apply flex text-sm pt-6 relative mt-4 right-9;
 }
 
 .underLine {

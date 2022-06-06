@@ -1,13 +1,13 @@
 import Icon from "../Icon";
 import styles from "./styles.module.scss";
 
-const Button = ({ title, type, rounded, className, onClick, iconId}) => {
+const Button = ({ title, type, rounded, className, onClick, iconId, iconSize}) => {
   return (
     <button
       onClick={onClick}
       className={`${className} ${styles[type]} ${rounded ? styles.rounded : ""}`}
     >
-      { iconId && <Icon id={iconId} className="mr-1"/>}
+      { iconId && <Icon id={iconId} className={`mx-1 h-${iconSize} w-${iconSize}`}/>}
       {title}
     </button>
   );  
