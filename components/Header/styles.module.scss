@@ -19,6 +19,9 @@
 .button {
     @apply flex text-sm pt-6 relative mt-4 right-9;
 }
+ .iconArrow {
+    @apply h-8 w-8; 
+} 
 
 .underLine {
     @apply absolute w-1/5 left-16 bg-black;

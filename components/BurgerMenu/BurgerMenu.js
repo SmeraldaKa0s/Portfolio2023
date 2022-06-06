@@ -8,7 +8,7 @@ const BurgerMenu = ({ handleCloseModal, isOpen }) => {
       <div className={styles.boxTop}>
         <Button
           iconId="close"
-          iconSize="9"
+          iconClassName={styles.iconClose}
           className={styles.buttonClose}
           onClick={handleCloseModal}
           type="quiet"

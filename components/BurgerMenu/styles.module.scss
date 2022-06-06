@@ -3,14 +3,17 @@
     z-index: 100;
 
     .buttonClose {
-        @apply hidden top-12 right-12;
+        @apply hidden top-12 right-10;
     }
 
-    
     .boxTop {
         @apply relative w-0 h-p55 bg-violet-300 transition-all ease-out duration-500;
     }
-    
+
+    .iconClose {
+        @apply h-8 w-8;
+    }
+
     .title {
         @apply hidden top-11 left-11 text-5xl;
         font-family: "Staatliches";
@@ -18,14 +21,14 @@
 
     .boxOptions {
         @apply hidden bottom-16 left-11  flex-col text-2xl font-medium;
-       
+
         a {
             @apply pt-9;
         }
     }
 
     .colorText {
-        @apply text-neutral-100; 
+        @apply text-neutral-100;
     }
 
     .boxBottom {
@@ -39,11 +42,11 @@
     .buttonClose {
         @apply block absolute;
     }
-    
+
     .boxTop {
         @apply w-screen overflow-hidden transition-all ease-out duration-500;
     }
-    
+
     .title {
         @apply block absolute;
     }
