@@ -15,6 +15,7 @@ const Header = ({ image, caption }) => {
           title="Get in touch"
           type="quiet"
           iconId="iconArrow"
+          iconClassName={styles.iconArrow}
         />
         <div className={styles.underLine}></div>
       </div>
