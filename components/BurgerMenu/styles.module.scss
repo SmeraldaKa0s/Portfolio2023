@@ -20,7 +20,7 @@
     }
 
     .boxOptions {
-        @apply hidden bottom-16 left-11  flex-col text-2xl font-medium;
+        @apply hidden bottom-16 left-11  flex-col text-2xl font-medium tracking-widest;
 
         a {
             @apply pt-9;

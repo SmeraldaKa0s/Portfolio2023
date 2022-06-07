@@ -1,8 +1,14 @@
+import Layout from "../../components/Layout";
+
 const Projects = () => {
   return (
-    <>
-      <h1>PROJEECCCCTSSSSSSS</h1>
-    </>
+    <Layout title="Projects">
+      <section>
+      <h1>Projects</h1>
+      </section>
+      
+
+    </Layout>
   );
 };
 
