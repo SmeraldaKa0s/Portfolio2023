@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col pl-6;
+    @apply flex flex-col p-6;
 
     h1 {
         @apply text-3xl pt-32 tracking-wider;
@@ -21,7 +21,7 @@
         @apply flex items-end pt-1;
 
         p {
-            @apply tracking-wide; 
+            @apply tracking-wide;
         }
     }
 
@@ -29,15 +29,34 @@
         @apply mt-11;
 
         p {
-            @apply tracking-wide; 
+            @apply tracking-wide;
         }
     }
 
     h2 {
-        @apply mt-11 text-2xl tracking-wider mb-6;
+        @apply mt-11 text-2xl tracking-wider mb-1;
 
         p {
-            @apply pt-9;
+            @apply italic;
+        } 
+    }
+
+    .boxImage {
+        @apply w-5/12 mx-auto mt-9; 
+        
+        .image {
+            @apply object-cover;
+        }
+    }
+
+    .boxTech {
+        @apply flex; 
+
+        ul { 
+
+            li {
+                @apply pt-1;
+            }
         }
     }
 }

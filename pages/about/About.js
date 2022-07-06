@@ -29,7 +29,7 @@ const About = () => {
           </a>
         </div>
         <div className={styles.boxDownload}>
-          <p>Dowload my Resume</p>
+          <p>Download my Resume</p>
           <Icon id="download" />
         </div>
         <div className={styles.boxCaption}>
@@ -37,12 +37,30 @@ const About = () => {
             I am a creative frontend developer, librarian, a little designer.
           </p>
           <p>My inbox always open for your friendly proposals.</p>
-          <h2>Skills</h2>
-          <p>These characters show some of my interests and knowledge.</p>
+          <h2>Main Skills</h2>
+          <p>Frontend development</p>
         </div>
-
-        <Image src="/Images/personaje.svg" width="200" height="140" className={styles.image} alt="retrato"/>
-
+        <div className={styles.boxImage}>
+          <Image
+            src="/Images/character2.png"
+            width="200"
+            height="450"
+            className={styles.image}
+            alt="personaje"
+          />
+        </div>
+        <div className={styles.boxTech}>
+          <ul>
+            <li>JavaScript, HTML, CSS</li>
+            <li>Sass, ReactJS, NextJS</li>
+            <li>Tailwind, MaterialUI, Boostrap</li>
+            <li>Git, Github, Figma</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+        </div>
       </section>
     </Layout>
   );
