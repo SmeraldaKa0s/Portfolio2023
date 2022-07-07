@@ -9,7 +9,11 @@ const About = () => {
       <section className={styles.container}>
         <h1>About</h1>
         <div className={styles.boxLinks}>
-          <a href="https://www.linkedin.com/in/alx-l/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/alx-l/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon id="linkedin" />
           </a>
           <a
