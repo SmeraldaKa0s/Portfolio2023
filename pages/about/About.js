@@ -58,29 +58,32 @@ const About = () => {
             <li>Linux</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.boxEducation}>
           <h2>Education</h2>
           <h3>In progress:</h3>
-          <p>Bachelor of Electronic Arts - UNTREF (2020)</p>
+          <h4 className={styles.studies}>
+            Bachelor of Electronic Arts - UNTREF (2020)
+          </h4>
           <p>Python, Numpy, Pandas, Anaconda, Google Colab, P5JS, DataSet.</p>
           <h3>Completed:</h3>
-          <p>Frontend Developer - ADA ITW</p>
-          <p>
-            Algoritms, JavaScript, HTML, CSS, Sass, ReactJS, Github, Boostrap, Responsive Design
+          <h4 className={styles.studies}>Frontend Developer - ADA ITW</h4>
+          <p className={styles.paragraph}>
+            Algoritms, JavaScript, HTML, CSS, Sass, ReactJS, Github, Boostrap,
+            Responsive Design.
           </p>
-          <p>Platzi courses:</p>
-          <p>NextJS, Tailwind, Git, Linux</p>
-          <p>Library Technician - ISFT 182</p>
+          <h4 className={styles.studies}>Platzi courses:</h4>
+          <p className={styles.paragraph}>NextJS, Tailwind, Git, Linux</p>
+          <h4 className={styles.studies}>Library Technician - ISFT 182</h4>
           <p>
             I learned to retrieve information from databases, catalog and
-            classify documentation; organize, maintain and curate periodicals and
-            help users to find those materials.
+            classify documentation; organize, maintain and curate periodicals
+            and help users to find those materials.
           </p>
           <h3>Incomplete:</h3>
-          <p>Bachelor of Visual Arts</p>
-          <p>I learned about aesthetics, user experience, history and philosophy.</p>
-        </div>
-        <div>
+          <p className={styles.studies}>Bachelor of Visual Arts</p>
+          <p>
+            I learned about aesthetics, user experience, history and philosophy.
+          </p>
           <h3>Also busy with</h3>
           <p>Technological Surveillance 📈</p>
           <p>Plants 🌿</p>

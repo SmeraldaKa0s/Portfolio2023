@@ -38,25 +38,38 @@
 
         p {
             @apply italic;
-        } 
+        }
     }
 
     .boxImage {
-        @apply w-5/12 mx-auto mt-9; 
-        
+        @apply w-5/12 mx-auto mt-9;
+
         .image {
             @apply object-cover;
         }
     }
 
     .boxTech {
-        @apply flex; 
+        @apply flex;
 
-        ul { 
-
+        ul {
             li {
                 @apply pt-1;
             }
+        }
+    }
+
+    .boxEducation {
+        h3 {
+            @apply text-lg mt-9 mb-1;
+        }
+
+        .studies {
+            @apply mb-1;
+        }
+
+        .paragraph {
+            @apply mb-9;
         }
     }
 }
