@@ -1,0 +1,6 @@
+.container {
+    @apply flex flex-col p-6;
+    h1 {
+        @apply text-3xl pt-32 tracking-wider;
+    }
+}

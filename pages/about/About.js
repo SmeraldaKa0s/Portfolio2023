@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import styles from "./styles.module.scss";
 import Icon from "../../components/Icon";
 import Image from "next/image";
+import cv from "../../public/cv.pdf"
 
 const About = () => {
   return (
@@ -20,7 +21,6 @@ const About = () => {
             href="https://github.com/SmeraldaKa0s/Portfolio2022"
             target="_blank"
             rel="noreferrer"
-            iconClassName={styles.iconGithub}
           >
             <Icon id="github" />
           </a>
@@ -33,8 +33,10 @@ const About = () => {
           </a>
         </div>
         <div className={styles.boxDownload}>
+          <a href={cv} download="blabla">
           <p>Download my Resume</p>
           <Icon id="download" />
+          </a>
         </div>
         <div className={styles.boxCaption}>
           <p>
