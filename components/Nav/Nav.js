@@ -15,7 +15,7 @@ const Nav = () => {
   };
 
   return (
-    <navbar className={styles.container}>
+    <nav className={styles.container}>
       <div>
         <p>Alekxa</p>
       </div>
@@ -31,7 +31,7 @@ const Nav = () => {
         <Link href="/about">/about</Link>
         <Link href="/projects">/projects</Link>
       </ul>
-    </navbar>
+    </nav>
   );
 };
 

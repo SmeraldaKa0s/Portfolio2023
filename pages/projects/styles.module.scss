@@ -3,4 +3,8 @@
     h1 {
         @apply text-3xl pt-32 tracking-wider;
     }
+
+    .caption {
+        @apply mt-2 mb-11;
+    }
 }

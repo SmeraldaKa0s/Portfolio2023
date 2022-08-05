@@ -5,10 +5,27 @@ import Image from "next/image";
 import cv from "../../public/cv.pdf"
 
 const About = () => {
+
+  /**
+   * Ejemplo de como deberian ser las traducciones, el objeto content deberia estar 
+   * en un archivo separado y el dato "ES" venir del context
+   */
+  
+  const content = {
+    ES: {
+      title: "Sobre mi",
+    },
+    EN: {
+      title: "About"
+    }
+  }
+  
+  const { title } = content["EN"]
+
   return (
     <Layout title="About">
       <section className={styles.container}>
-        <h1>About</h1>
+        <h1>{title}</h1>
         <div className={styles.boxLinks}>
           <a
             href="https://www.linkedin.com/in/alx-l/"
@@ -34,7 +51,7 @@ const About = () => {
         </div>
         <div className={styles.boxDownload}>
           <a href={cv} download="blabla">
-          <p>Download my Resume</p>
+          <p>Download my CV</p>
           <Icon id="download" />
           </a>
         </div>
