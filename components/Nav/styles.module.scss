@@ -1,7 +1,7 @@
 .container {
     @apply flex justify-between pl-5 pt-6;
 
-    p {
+    .name {
         @apply text-5xl;
         font-family: "Staatliches";
     }

@@ -15,9 +15,9 @@ const BurgerMenu = ({ handleCloseModal, isOpen }) => {
         />
         <p className={styles.title}>Alekxa</p>
         <ul className={styles.boxOptions}>
-          <Link href="/home">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
+          <Link href="/home">HOME</Link>
+          <Link href="/about">ABOUT</Link>
+          <Link href="/projects">WORK</Link>
         </ul>
       </div>
       <div className={styles.boxBottom}>

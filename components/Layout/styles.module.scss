@@ -5,20 +5,4 @@
     .boxSound {
         @apply w-12 h-10 bg-orange-100 border-2 border-indigo-300 flex justify-center items-center absolute -bottom-2 -right-3;
     }
-
-    .boxPalette {
-        @apply w-10 h-40 flex absolute;
-
-        .darkPalette {
-            @apply w-7 h-7 bg-violet-300 -left-7 bottom-8 absolute;
-        }
-
-        .lightPalette {
-            @apply w-7 h-7 bg-gray-600 absolute -bottom-4 -left-7;
-        }
-
-        .intermediatePalette {
-            @apply w-7 h-7 bg-yellow-400 absolute -bottom-16 -left-7;
-        }
-    }
 }

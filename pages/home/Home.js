@@ -19,7 +19,7 @@ const Home = () => {
       caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
       eiusmod  tempor incididunt ut labore et labore. "/>
-      {modalOpen && <Modal handleClose={handleClose} />}
+      {/* {modalOpen && <Modal handleClose={handleClose} />} */}
     </Layout>
   );
 };

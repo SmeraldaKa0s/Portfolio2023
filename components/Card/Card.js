@@ -1,29 +1,25 @@
 import styles from "./styles.module.scss";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const Card = (props) => {
-    
-  const { 
-    image= "/Images/gatito.jpeg",
-     title, 
-     year, 
-     caption } = props;
+  const { image = "/Images/gatito.jpeg", title, year, caption, id } = props;
   return (
-      <article>
-        <div>
-          <Image
-            src={image}
-            width="250"
-            height="150"
-            className={styles.image}
-            alt={title}
-          />
+    <Link href={`/projects/${id}`}>
+      <a>
+
+      <article className={styles.card}>
+        <div className={styles.image}>
+          <Image src={image} width="450" height="350" alt={title} />
         </div>
-        <h3 className={styles.title}>{title}</h3>
-        <p>{year}</p>
-        <p>{caption}</p>
+        <div className={styles.content}>
+          <h3 className={styles.title}>{title}</h3>
+          <p>{year}</p>
+          <p>{caption}</p>
+        </div>
       </article>
+      </a>
+    </Link>
   );
 };
 

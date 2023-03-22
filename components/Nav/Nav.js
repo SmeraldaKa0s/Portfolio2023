@@ -17,19 +17,33 @@ const Nav = () => {
   return (
     <nav className={styles.container}>
       <div>
-        <p>Alekxa</p>
+        <Link href="/home">
+          <a className={styles.name}>Alekxa</a>
+        </Link>
       </div>
       <div className={styles.burgerMenu} onClick={handleOpenModal}>
         <div></div>
         <div className={styles.line}></div>
         <div></div>
       </div>
-      <BurgerMenu handleCloseModal={handleCloseModal} isOpen={openModalBurger}/>
+      <BurgerMenu
+        handleCloseModal={handleCloseModal}
+        isOpen={openModalBurger}
+      />
       <ul className={styles.list}>
-        <Link href="/home">/home</Link>
-        <Link href="/lesli">/lesli</Link>
-        <Link href="/about">/about</Link>
-        <Link href="/projects">/projects</Link>
+        <Link href="/about">
+          <a>
+            Info
+            <span>ABOUT ME</span>
+          </a>
+        </Link>
+        <Link href="/projects">
+          <a>
+            Work
+            <span>SOME CASES</span>
+          </a>
+        </Link>
+        <Link href="/contact">Contact</Link>
       </ul>
     </nav>
   );

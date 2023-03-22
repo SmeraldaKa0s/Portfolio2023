@@ -18,11 +18,6 @@ const Layout = ({ title, description, children }) => {
         <div className={styles.boxSound}>
           <Icon id="sound"/>
         </div>
-        <div className={styles.boxPalette}>
-          <div className={styles.darkPalette}></div>
-          <div className={styles.lightPalette}></div>
-          <div className={styles.intermediatePalette}></div>
-        </div>
         </main>
         <Footer />
       </div>
