@@ -1,8 +1,8 @@
 .container {
-    @apply flex justify-between pl-5 pt-6;
+    @apply flex pl-5 pt-8 justify-between;
 
     .name {
-        @apply text-5xl;
+        @apply text-5xl pt-4;
    
     }
 }
@@ -20,6 +20,15 @@
     }
 }
 
+.box {
+    @apply flex w-1/2; 
+
 .list {
-    @apply gap-4 hidden lg:flex;
+    @apply gap-4 hidden lg:flex flex-1;
+
+    .linkNav {
+        @apply flex flex-col pt-4; 
+    }
+}
+
 }

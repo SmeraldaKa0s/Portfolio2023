@@ -30,21 +30,29 @@ const Nav = () => {
         handleCloseModal={handleCloseModal}
         isOpen={openModalBurger}
       />
-      <ul className={styles.list}>
-        <Link href="/about">
-          <a>
-            Info
-            <span>ABOUT ME</span>
-          </a>
-        </Link>
-        <Link href="/projects">
-          <a>
-            Work
-            <span>SOME CASES</span>
-          </a>
-        </Link>
-        <Link href="/contact">Contact</Link>
-      </ul>
+      <div className={styles.box}>
+        <div className={styles.list}>
+          <Link href="/about">
+            <a className={styles.linkNav}>
+              Info
+              <span>ABOUT ME</span>
+            </a>
+          </Link>
+        </div>
+        <div className={styles.list}>
+          <Link href="/projects">
+            <a className={styles.linkNav}>
+              Work
+              <span>SOME CASES</span>
+            </a>
+          </Link>
+        </div>
+        <div className={styles.list}>
+          <Link href="/contact">
+            <a className={styles.linkNav}>Contact</a>
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 };
