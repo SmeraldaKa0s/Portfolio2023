@@ -1,19 +1,20 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-
 const Header = ({ image, caption }) => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.container}>
         <Image
           src={image}
-          width="370"
-          height="267"
+          width="600"
+          height="400"
           className={styles.image}
           alt="retrato"
         />
-        <p>{caption}</p>
+        <div className={styles.boxParrafo}>
+          <p className={styles.parrafo}>{caption}</p>
+        </div>
       </div>
     </header>
   );
