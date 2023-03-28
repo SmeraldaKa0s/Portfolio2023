@@ -35,7 +35,7 @@ const Nav = () => {
           <Link href="/about">
             <a className={styles.linkNav}>
               Info
-              <span>ABOUT ME</span>
+              <span className={styles.parrafo}>ABOUT ME</span>
             </a>
           </Link>
         </div>
@@ -43,13 +43,13 @@ const Nav = () => {
           <Link href="/projects">
             <a className={styles.linkNav}>
               Work
-              <span>SOME CASES</span>
+              <span className={styles.parrafo}>SOME CASES</span>
             </a>
           </Link>
         </div>
         <div className={styles.list}>
           <Link href="/contact">
-            <a className={styles.linkNav}>Contact</a>
+            <a className={`${styles.contactLink} ${styles.contactButton }`}>LET'S TALK</a>
           </Link>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .container {
-    @apply flex pl-5 pt-8 justify-between;
+    @apply flex px-12 pt-8 justify-between;
 
     .name {
         @apply text-5xl pt-4;
@@ -21,14 +21,28 @@
 }
 
 .box {
-    @apply flex w-1/2; 
+    @apply flex; 
 
 .list {
     @apply gap-4 hidden lg:flex flex-1;
 
+
     .linkNav {
-        @apply flex flex-col pt-4; 
+        @apply flex flex-col pt-4 text-xl;
+        padding-right: 200px;
+        min-width: max-content
+    }
+    .parrafo {
+        @apply text-xs; 
     }
 }
 
+.contactButton {
+    @apply rounded-3xl border-zinc-100 border px-3 flex items-center justify-center; 
+}
+
+.contactLink {
+    @apply text-center text-base ; 
+ 
+}
 }

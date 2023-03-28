@@ -15,9 +15,9 @@ const Layout = ({ title, description, children }) => {
       <div className={styles.container}>
         <Nav />
         <main>{children}
-        <div className={styles.boxSound}>
+       {/*  <div className={styles.boxSound}>
           <Icon id="sound"/>
-        </div>
+        </div> */}
         </main>
         <Footer />
       </div>
