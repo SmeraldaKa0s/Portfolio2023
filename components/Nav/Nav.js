@@ -49,7 +49,7 @@ const Nav = () => {
         </div>
         <div className={styles.list}>
           <Link href="/contact">
-            <a className={`${styles.contactLink} ${styles.contactButton }`}>LET'S TALK</a>
+            <a className={`${styles.contactLink} ${styles.contactButton }`}>LET&apos;S TALK</a>
           </Link>
         </div>
       </div>
