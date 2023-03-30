@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 import styles from "./styles.module.scss";
-import projectsList from "./projectsList";
+import projectsList from "../../utils/projectsList";
 import Link from "next/link";
 import Card from "../../components/Card";
 

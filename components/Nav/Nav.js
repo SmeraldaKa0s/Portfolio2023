@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <nav className={styles.container}>
-      <div>
+      <div className={styles.boxName} >
         <Link href="/home">
           <a className={styles.name}>Alekxa</a>
         </Link>
