@@ -1,23 +1,20 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import Button from "../Button";
 
 const Header = ({ image, caption }) => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.container}>
-        <Image src={image} width="370" height="267" className={styles.image} alt="retrato"/>
-        <p>{caption}</p>
-      </div>
-      <div className={styles.box}>
-        <Button
-          className={styles.button}
-          title="Get in touch"
-          type="quiet"
-          iconId="iconArrow"
-          iconClassName={styles.iconArrow}
+        <Image
+          src={image}
+          width="600"
+          height="400"
+          className={styles.image}
+          alt="retrato"
         />
-        <div className={styles.underLine}></div>
+        <div className={styles.boxParrafo}>
+          <p className={styles.parrafo}>{caption}</p>
+        </div>
       </div>
     </header>
   );

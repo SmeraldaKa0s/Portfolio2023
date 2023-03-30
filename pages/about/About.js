@@ -2,12 +2,30 @@ import Layout from "../../components/Layout";
 import styles from "./styles.module.scss";
 import Icon from "../../components/Icon";
 import Image from "next/image";
+import cv from "../../public/cv.pdf"
 
 const About = () => {
+
+  /**
+   * Ejemplo de como deberian ser las traducciones, el objeto content deberia estar 
+   * en un archivo separado y el dato "ES" venir del context
+   */
+  
+  const content = {
+    ES: {
+      title: "Sobre mi",
+    },
+    EN: {
+      title: "About"
+    }
+  }
+  
+  const { title } = content["EN"]
+
   return (
     <Layout title="About">
       <section className={styles.container}>
-        <h1>About</h1>
+        <h1>{title}</h1>
         <div className={styles.boxLinks}>
           <a
             href="https://www.linkedin.com/in/alx-l/"
@@ -20,7 +38,6 @@ const About = () => {
             href="https://github.com/SmeraldaKa0s/Portfolio2022"
             target="_blank"
             rel="noreferrer"
-            iconClassName={styles.iconGithub}
           >
             <Icon id="github" />
           </a>
@@ -33,8 +50,10 @@ const About = () => {
           </a>
         </div>
         <div className={styles.boxDownload}>
-          <p>Download my Resume</p>
+          <a href={cv} download="blabla">
+          <p>Download my CV</p>
           <Icon id="download" />
+          </a>
         </div>
         <div className={styles.boxCaption}>
           <p>

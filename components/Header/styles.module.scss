@@ -1,16 +1,27 @@
+.header {
+    @apply mt-52;
+}
+
 .container {
-    @apply mt-11 flex flex-col items-center;
+    @apply mt-11 flex flex-col px-12;
 
     .image {
         @apply static;
     }
-
-    p {
-        @apply mt-11 text-sm text-center;
-        max-width: 300px;
-    }
-
 }
+
+.boxParrafo {
+    @apply flex justify-center;
+
+
+.parrafo {
+    @apply text-base text-center font-light text-white flex justify-center;
+    max-width: 20rem;
+}
+}
+
+
+
 .box {
     @apply ml-9; 
 

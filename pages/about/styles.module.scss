@@ -18,7 +18,11 @@
     }
 
     .boxDownload {
-        @apply flex items-end pt-1;
+        @apply pt-1;
+
+        a {
+            @apply flex; 
+        }
 
         p {
             @apply tracking-wide;

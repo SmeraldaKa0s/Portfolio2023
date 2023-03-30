@@ -1,0 +1,16 @@
+.container {
+    @apply flex flex-row justify-between px-12 pt-24; 
+    
+}
+
+.boxList {
+    @apply flex gap-12;
+
+    li {
+        @apply text-sm;
+    }
+}
+
+.boxDate {
+    @apply flex; 
+}

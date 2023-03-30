@@ -15,23 +15,45 @@ const Nav = () => {
   };
 
   return (
-    <navbar className={styles.container}>
-      <div>
-        <p>Alekxa</p>
+    <nav className={styles.container}>
+      <div className={styles.boxName} >
+        <Link href="/home">
+          <a className={styles.name}>Alekxa</a>
+        </Link>
       </div>
       <div className={styles.burgerMenu} onClick={handleOpenModal}>
         <div></div>
         <div className={styles.line}></div>
         <div></div>
       </div>
-      <BurgerMenu handleCloseModal={handleCloseModal} isOpen={openModalBurger}/>
-      <ul className={styles.list}>
-        <Link href="/home">/home</Link>
-        <Link href="/lesli">/lesli</Link>
-        <Link href="/about">/about</Link>
-        <Link href="/projects">/projects</Link>
-      </ul>
-    </navbar>
+      <BurgerMenu
+        handleCloseModal={handleCloseModal}
+        isOpen={openModalBurger}
+      />
+      <div className={styles.box}>
+        <div className={styles.list}>
+          <Link href="/about">
+            <a className={styles.linkNav}>
+              Info
+              <span className={styles.parrafo}>ABOUT ME</span>
+            </a>
+          </Link>
+        </div>
+        <div className={styles.list}>
+          <Link href="/projects">
+            <a className={styles.linkNav}>
+              Work
+              <span className={styles.parrafo}>SOME CASES</span>
+            </a>
+          </Link>
+        </div>
+        <div className={styles.list}>
+          <Link href="/contact">
+            <a className={`${styles.contactLink} ${styles.contactButton }`}>LET&apos;S TALK</a>
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
 };
 
