@@ -4,6 +4,8 @@ import projectsList from "../../utils/projectsList";
 import Link from "next/link";
 import Card from "../../components/Card";
 
+// TODO: Projects es una page pero lo moví a components porque por un error no me dejaba deployar 
+
 const Projects = () => {
   return (
     <Layout title="Projects">
