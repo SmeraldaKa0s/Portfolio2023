@@ -28,7 +28,10 @@ const About = () => {
         <div className={styles.container}>
           <span>CREATIVE</span>
           <span>DEVELOPER</span>
-          <span>DIGITAL</span>
+          <div className={styles.box}>
+            <p>INTERESED ABOUT MAKING DISTINCTIVE EXPERIENCES.</p>
+            <span>DIGITAL</span>
+          </div>
           <span>DESIGNER</span>
         </div>
       </section>
