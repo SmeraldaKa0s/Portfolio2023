@@ -1,79 +1,63 @@
-.container {
-    @apply flex flex-col p-6;
 
-    h1 {
-        @apply text-3xl pt-32 tracking-wider;
-    }
-
-    .iconGithub {
-        @apply h-8 w-8;
-    }
-
-    .boxLinks {
-        @apply flex mt-9;
-
-        a {
-            @apply mr-5;
-        }
-    }
-
-    .boxDownload {
-        @apply pt-1;
-
-        a {
-            @apply flex; 
-        }
-
-        p {
-            @apply tracking-wide;
-        }
-    }
-
-    .boxCaption {
-        @apply mt-11;
-
-        p {
-            @apply tracking-wide;
-        }
-    }
-
-    h2 {
-        @apply mt-11 text-2xl tracking-wider mb-1;
-
-        p {
-            @apply italic;
-        }
-    }
-
-    .boxImage {
-        @apply w-5/12 mx-auto mt-9;
-
-        .image {
-            @apply object-cover;
-        }
-    }
-
-    .boxTech {
-        @apply flex;
-
-        ul {
-            li {
-                @apply pt-1;
-            }
-        }
-    }
-
-    .boxEducation {
-        h3 {
-            @apply text-lg mt-9 mb-1;
-        }
-
-        .studies {
-            @apply mb-1;
-        }
-
-        .paragraph {
-            @apply mb-9;
-        }
-    }
+.progress {
+  @apply text-red-600; 
 }
+
+$delay-time: 0.5s;
+
+.container {
+    @apply flex flex-col mt-16; 
+
+    span {
+        @apply font-thin leading-5 mt-32 opacity-0; 
+        font-size: 165px;
+        font-weight: 100;
+        font-family: "Roboto";
+        animation: aparecer 0.5s ease-out forwards;
+        animation-delay: $delay-time;
+        
+      }
+
+      span:nth-child(1) {
+        animation-delay: 0s;
+        margin-left: 16%;
+        
+      }
+    
+      span:nth-child(2) {
+        animation-delay: $delay-time;
+        // margin-left: 8%;
+      }
+    
+      span:nth-child(3) {
+        animation-delay: $delay-time * 2;
+      }
+    
+      span:nth-child(4) {
+        animation-delay: $delay-time * 3;
+        margin-left: 16%;
+      }
+
+      .box {
+        @apply flex flex-row items-center justify-center;
+
+        p {
+            @apply text-center text-sm; 
+            max-width: 190px;
+        }
+      }
+    }
+    
+    @keyframes aparecer {
+      0% {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+
+
+}
+

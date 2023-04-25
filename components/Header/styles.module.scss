@@ -1,9 +1,7 @@
-.header {
-    @apply mt-52;
-}
+
 
 .container {
-    @apply mt-11 flex flex-col px-12;
+    @apply mt-11 flex flex-col;
 
     .image {
         @apply static;
