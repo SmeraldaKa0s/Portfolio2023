@@ -1,0 +1,66 @@
+[1mdiff --git a/components/Footer/styles.module.scss b/components/Footer/styles.module.scss[m
+[1mindex cfb1a0a..d6ecf63 100644[m
+[1m--- a/components/Footer/styles.module.scss[m
+[1m+++ b/components/Footer/styles.module.scss[m
+[36m@@ -1,5 +1,5 @@[m
+ .container {[m
+[31m-    @apply flex flex-row justify-between px-12 pt-24; [m
+[32m+[m[32m    @apply flex flex-row justify-between pt-24;[m[41m [m
+     [m
+ }[m
+ [m
+[1mdiff --git a/components/Header/styles.module.scss b/components/Header/styles.module.scss[m
+[1mindex 29344f2..67e82d6 100644[m
+[1m--- a/components/Header/styles.module.scss[m
+[1m+++ b/components/Header/styles.module.scss[m
+[36m@@ -3,7 +3,7 @@[m
+ }[m
+ [m
+ .container {[m
+[31m-    @apply mt-11 flex flex-col px-12;[m
+[32m+[m[32m    @apply mt-11 flex flex-col;[m
+ [m
+     .image {[m
+         @apply static;[m
+[1mdiff --git a/components/Layout/styles.module.scss b/components/Layout/styles.module.scss[m
+[1mindex 900aa79..95dd87e 100644[m
+[1m--- a/components/Layout/styles.module.scss[m
+[1m+++ b/components/Layout/styles.module.scss[m
+[36m@@ -1,5 +1,5 @@[m
+ .container {[m
+[31m-    @apply bg-black;[m
+[32m+[m[32m    @apply bg-black px-12;[m
+     min-height: calc(100vh - 30px);[m
+ [m
+     .boxSound {[m
+[1mdiff --git a/components/Nav/styles.module.scss b/components/Nav/styles.module.scss[m
+[1mindex b121ce4..f77fcd0 100644[m
+[1m--- a/components/Nav/styles.module.scss[m
+[1m+++ b/components/Nav/styles.module.scss[m
+[36m@@ -1,5 +1,5 @@[m
+ .container {[m
+[31m-    @apply flex px-12 pt-8 justify-between;[m
+[32m+[m[32m    @apply flex pt-8 justify-between;[m
+ [m
+     .boxName {[m
+         @apply pt-3;[m
+[1mdiff --git a/pages/about/About.js b/pages/about/About.js[m
+[1mindex 5444614..faab9ac 100644[m
+[1m--- a/pages/about/About.js[m
+[1m+++ b/pages/about/About.js[m
+[36m@@ -34,6 +34,15 @@[m [mconst About = () => {[m
+           </div>[m
+           <span>DESIGNER</span>[m
+         </div>[m
+[32m+[m[32m        <div className={styles.boxImage}>[m
+[32m+[m[32m          <Image[m
+[32m+[m[32m            src="/Images/character.png"[m
+[32m+[m[32m            width="200"[m
+[32m+[m[32m            height="450"[m
+[32m+[m[32m            className={styles.image}[m
+[32m+[m[32m            alt="personaje"[m
+[32m+[m[32m          />[m
+[32m+[m[32m        </div>[m
+       </section>[m
+ [m
+     </Layout>[m

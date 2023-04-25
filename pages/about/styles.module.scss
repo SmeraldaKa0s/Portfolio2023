@@ -1,4 +1,8 @@
 
+.progress {
+  @apply text-red-600; 
+}
+
 $delay-time: 0.5s;
 
 .container {

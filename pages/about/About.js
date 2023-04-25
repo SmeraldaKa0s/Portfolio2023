@@ -25,6 +25,7 @@ const About = () => {
   return (
     <Layout title="About">
       <section>
+        <span className={styles.progress}>WORK IN PROGRESS</span>
         <div className={styles.container}>
           <span>CREATIVE</span>
           <span>DEVELOPER</span>
@@ -33,6 +34,15 @@ const About = () => {
             <span>DIGITAL</span>
           </div>
           <span>DESIGNER</span>
+        </div>
+        <div className={styles.boxImage}>
+          <Image
+            src="/Images/character.png"
+            width="200"
+            height="450"
+            className={styles.image}
+            alt="personaje"
+          />
         </div>
       </section>
 
