@@ -1,63 +1,65 @@
-
 .progress {
-  @apply text-red-600; 
+  @apply text-red-600;
 }
 
 $delay-time: 0.5s;
 
 .container {
-    @apply flex flex-col mt-16; 
+  @apply flex flex-col mt-16;
 
-    span {
-        @apply font-thin leading-5 mt-32 opacity-0; 
-        font-size: 165px;
-        font-weight: 100;
-        font-family: "Roboto";
-        animation: aparecer 0.5s ease-out forwards;
-        animation-delay: $delay-time;
-        
-      }
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    @apply font-thin opacity-0;
+    font-size: 165px;
+    font-weight: 100;
+    line-height: 130px;
+    font-family: "Roboto";
+    animation: aparecer 0.5s ease-out forwards;
+    animation-delay: $delay-time;
 
-      span:nth-child(1) {
-        animation-delay: 0s;
-        margin-left: 16%;
-        
-      }
-    
-      span:nth-child(2) {
-        animation-delay: $delay-time;
-        // margin-left: 8%;
-      }
-    
-      span:nth-child(3) {
-        animation-delay: $delay-time * 2;
-      }
-    
-      span:nth-child(4) {
-        animation-delay: $delay-time * 3;
-        margin-left: 16%;
-      }
+  }
 
-      .box {
-        @apply flex flex-row items-center justify-center;
+  .text1 {
+    animation-delay: 0s;
+    margin-left: 16%;
+  }
 
-        p {
-            @apply text-center text-sm; 
-            max-width: 190px;
-        }
-      }
+  .text2 {
+    animation-delay: $delay-time;
+    // margin-left: 8%;
+  }
+
+  .text3 {
+    animation-delay: $delay-time * 2;
+  }
+
+  .text4 {
+    animation-delay: $delay-time * 3;
+    margin-left: 16%;
+  }
+
+  .box {
+    @apply flex flex-row items-center justify-center;
+
+    .subtext {
+      @apply text-center text-sm;
+      max-width: 190px;
     }
-    
-    @keyframes aparecer {
-      0% {
-        opacity: 0;
-        transform: translateY(20%);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0%);
-      }
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 
 
 }
-

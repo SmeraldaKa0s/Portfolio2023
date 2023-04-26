@@ -27,13 +27,13 @@ const About = () => {
       <section>
         <span className={styles.progress}>WORK IN PROGRESS</span>
         <div className={styles.container}>
-          <span>CREATIVE</span>
-          <span>DEVELOPER</span>
+          <p className={styles.text1}>CREATIVE</p>
+          <p className={styles.text2}>DEVELOPER</p>
           <div className={styles.box}>
-            <p>INTERESED ABOUT MAKING DISTINCTIVE EXPERIENCES.</p>
-            <span>DIGITAL</span>
+            <p className={styles.subtext}>INTERESED ABOUT MAKING DISTINCTIVE EXPERIENCES.</p>
+            <p className={styles.text3}>DIGITAL</p>
           </div>
-          <span>DESIGNER</span>
+          <p className={styles.text4}>DESIGNER</p>
         </div>
         <div className={styles.boxImage}>
           <Image
