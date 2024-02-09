@@ -36,13 +36,13 @@ const About = () => {
           <p className={styles.text4}>DESIGNER</p>
         </div>
         <div className={styles.boxImage}>
-          <Image
+          {/* <Image
             src="/Images/character.png"
             width="200"
             height="450"
             className={styles.image}
             alt="personaje"
-          />
+          /> */}
         </div>
       </section>
 
