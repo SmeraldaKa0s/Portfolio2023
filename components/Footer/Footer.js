@@ -19,7 +19,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className={styles.boxDate}>
-        <p>2023</p>
+        <p>2024</p>
       </div>
     </footer>
   );

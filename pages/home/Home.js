@@ -32,8 +32,8 @@ const Home = () => {
     <Layout title="Home">
       <Header
         image={images[currentImageIndex]}
-        caption="Hi! I'm Alekxandra a creative developer and digital designer 
-        student  from Argentina interesed about making distinctive experiences.  "
+        caption="Hi! I'm Alexandra, a versatile professional with a background in UX Research, UX/UI Design, and Web Development.
+         Interesed about making distinctive experiences."
         className={styles.container}
       />
     </Layout>
