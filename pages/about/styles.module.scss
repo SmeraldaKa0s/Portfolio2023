@@ -1,7 +1,3 @@
-.progress {
-  @apply text-red-600;
-}
-
 $delay-time: 0.5s;
 
 .container {
@@ -15,7 +11,7 @@ $delay-time: 0.5s;
     font-size: 165px;
     font-weight: 100;
     line-height: 130px;
-    font-family: "Roboto";
+    font-family: "Inter";
     animation: aparecer 0.5s ease-out forwards;
     animation-delay: $delay-time;
 
@@ -60,6 +56,39 @@ $delay-time: 0.5s;
     opacity: 1;
     transform: translateY(0%);
   }
+}
 
+.mainBox {
+  @apply flex justify-end mt-32;
+  font-family: "Inter";
+  font-weight: 200;
+}
+.mainText {
+  @apply text-2xl max-w-3xl flex;
+}
 
+.aboutBox {
+  @apply flex justify-center flex-col mt-32;
+  font-family: "Inter";
+  font-weight: 200;
+
+  .subtext {
+    @apply text-sm pb-3;
+  }
+
+  .about {
+    @apply text-2xl max-w-3xl;
+  }
+
+  .margin {
+    @apply mt-12;
+  }
+}
+
+.myselfBox {
+  @apply flex justify-end mt-32; 
+
+  .image {
+    @apply flex;
+  }
 }
