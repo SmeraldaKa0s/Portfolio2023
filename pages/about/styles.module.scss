@@ -68,16 +68,16 @@ $delay-time: 0.5s;
 }
 
 .aboutBox {
-  @apply flex justify-center flex-col mt-32;
+  @apply justify-center flex flex-col mt-32;
   font-family: "Inter";
   font-weight: 200;
 
   .subtext {
-    @apply text-sm pb-3;
+    @apply flex text-sm pb-3;
   }
 
   .about {
-    @apply text-2xl max-w-3xl;
+    @apply flex text-2xl max-w-3xl;
   }
 
   .margin {
