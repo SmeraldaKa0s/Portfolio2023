@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 
 const List = ({ items }) => {
   return (
-    <div>
+
       <ul className={styles.container}>
         {items.map((item) => (
           <li key={item.id} className={`${styles.list} ${styles.top}`}>
@@ -15,7 +15,7 @@ const List = ({ items }) => {
           </li>
         ))}
       </ul>
-    </div>
+
   );
 };
 

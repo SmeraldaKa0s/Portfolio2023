@@ -1,5 +1,8 @@
 $delay-time: 0.5s;
 
+.section {
+  @apply flex justify-center items-center;
+}  
 .container {
   @apply flex flex-col mt-16;
 
@@ -68,26 +71,28 @@ $delay-time: 0.5s;
 }
 
 .centerAbout {
-  @apply flex justify-center items-center; 
+  @apply flex flex-col mt-32 max-w-4xl; 
+  font-family: "Inter";
+  font-weight: 200;
+}
+
+.centerContent {
+  @apply flex flex-col text-left;
+
 }
 
 .aboutBox {
-  @apply flex flex-col mt-32;
-  font-family: "Inter";
-  font-weight: 200;
-
-  .subtext {
-    @apply flex text-sm pb-3;
-  }
-
-  .about {
-    @apply flex text-2xl max-w-3xl;
-  }
-
-  .margin {
-    @apply mt-12;
-  }
+  @apply flex flex-col mt-32 max-w-4xl;
 }
+.about {
+  @apply text-2xl max-w-3xl;
+}
+
+.margin {
+  @apply mt-12;
+}
+
+
 
 .myselfBox {
   @apply flex justify-end mt-32; 
@@ -99,4 +104,5 @@ $delay-time: 0.5s;
 
 .list {
   @apply my-40;
+  //max-width: 60%;
 }
