@@ -67,8 +67,12 @@ $delay-time: 0.5s;
   @apply text-2xl max-w-3xl flex;
 }
 
+.centerAbout {
+  @apply flex justify-center items-center; 
+}
+
 .aboutBox {
-  @apply justify-center flex flex-col mt-32;
+  @apply flex flex-col mt-32;
   font-family: "Inter";
   font-weight: 200;
 
@@ -91,4 +95,8 @@ $delay-time: 0.5s;
   .image {
     @apply flex;
   }
+}
+
+.list {
+  @apply my-40;
 }

@@ -1,0 +1,23 @@
+.container {
+    @apply list-none pt-8;
+
+    .list {
+        @apply flex items-center py-8 px-4 border-b border-zinc-800;
+    }
+
+    .top {
+        @apply flex items-center py-8 px-4 border-t border-zinc-800;
+    }
+
+    .box {
+        @apply flex-1;
+    }
+
+    .title {
+        @apply text-sm;
+    }
+
+    .subtext { 
+        @apply text-sm text-gray-500;
+    }
+}
