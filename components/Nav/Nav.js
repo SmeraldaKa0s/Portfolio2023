@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <nav className={styles.container}>
-      <div className={styles.boxName} >
+      <div className={styles.boxName}>
         <Link href="/home">
           <a className={styles.name}>Alekxa</a>
         </Link>
@@ -49,7 +49,9 @@ const Nav = () => {
         </div>
         <div className={styles.list}>
           <Link href="/contact">
-            <a className={`${styles.contactLink} ${styles.contactButton }`}>LET&apos;S TALK</a>
+            <a className={`${styles.contactLink} ${styles.contactButton}`}>
+              LET&apos;S TALK
+            </a>
           </Link>
         </div>
       </div>

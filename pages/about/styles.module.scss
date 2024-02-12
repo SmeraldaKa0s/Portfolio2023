@@ -1,7 +1,11 @@
 $delay-time: 0.5s;
 
-.section {
-  @apply flex justify-center items-center;
+/*   .cover { 
+    @apply p-8 lg:p-12 flex relative lg:static flex-col items-center justify-center m-auto gap-5 overflow-hidden;
+}  */ 
+
+ .section {
+  @apply flex justify-center relative lg:static flex-col overflow-hidden m-auto;
 }  
 .container {
   @apply flex flex-col mt-16;
@@ -93,13 +97,10 @@ $delay-time: 0.5s;
 }
 
 
-
-.myselfBox {
-  @apply flex justify-end mt-32; 
-
-  .image {
-    @apply flex;
-  }
+.imageConteiner {
+  @apply flex justify-center gap-14 flex-wrap px-6 lg:px-10;
+  margin-top: 65px;
+  
 }
 
 .list {

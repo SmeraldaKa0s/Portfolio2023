@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Icon from "../../components/Icon";
 import cv from "../../public/cv.pdf";
 import List from "../../components/List";
+import Card from "../../components/Card/Card";
 
 const About = () => {
   const items = [
@@ -44,7 +45,7 @@ const About = () => {
   return (
     <>
       <Layout title="About">
-        <section>
+        <section className={styles.section}>
           <div className={styles.container}>
             <p className={styles.text1}>UX DESIGNER</p>
 
@@ -117,6 +118,17 @@ const About = () => {
             <p className={styles.text1}>VISUAL</p>
             <p className={styles.text3}>COLLECTION</p>
             <p className={styles.text4}>ABOUT ME</p>
+          </div>
+          <div className={styles.imageConteiner}>
+            <Card image={"/Images/principal.png"} />
+            <Card image={"/Images/talking1.jpeg"} />
+            <Card image={"/Images/colgado.png"} />
+            <Card image={"/Images/mafia.jpeg"} />
+            <Card image={"/Images/soldarr.jpeg"} />
+            <Card image={"/Images/pasearlo.jpg"} />
+            <Card image={"/Images/mochile.jpg"} />
+            <Card image={"/Images/job.jpeg"} />
+            <Card image={"/Images/selva1.jpg"} />
           </div>
         </section>
       </Layout>

@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./styles.module.scss";
 import Nav from "../Nav";
 import Footer from "../Footer";
-import Icon from "../Icon";
+
 
 const Layout = ({ title, description, children }) => {
   return (
@@ -15,9 +15,6 @@ const Layout = ({ title, description, children }) => {
       <div className={styles.container}>
         <Nav />
         <main>{children}
-       {/*  <div className={styles.boxSound}>
-          <Icon id="sound"/>
-        </div> */}
         </main>
         <Footer />
       </div>
