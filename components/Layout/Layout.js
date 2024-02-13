@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./styles.module.scss";
 import Nav from "../Nav";
 import Footer from "../Footer";
-
+import CursorFilter from "../CursorFilter";
 
 const Layout = ({ title, description, children }) => {
   return (
@@ -12,6 +12,7 @@ const Layout = ({ title, description, children }) => {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <CursorFilter />
       <div className={styles.container}>
         <Nav />
         <main>{children}
