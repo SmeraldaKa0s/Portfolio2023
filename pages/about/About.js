@@ -120,15 +120,15 @@ const About = () => {
             <p className={styles.text4}>ABOUT ME</p>
           </div>
           <div className={styles.imageConteiner}>
-            <Card image={"/Images/principal.png"} />
-            <Card image={"/Images/talking1.jpeg"} />
-            <Card image={"/Images/colgado.png"} />
-            <Card image={"/Images/mafia.jpeg"} />
-            <Card image={"/Images/soldarr.jpeg"} />
-            <Card image={"/Images/pasearlo.jpg"} />
-            <Card image={"/Images/mochile.jpg"} />
-            <Card image={"/Images/job.jpeg"} />
-            <Card image={"/Images/selva1.jpg"} />
+            <Card image={"/Images/ahorradas.png"} withBN />
+            <Card image={"/Images/talking1.jpeg"} withBN />
+            <Card image={"/Images/colgado.png"} withBN />
+            <Card image={"/Images/mafia.jpeg"} withBN />
+            <Card image={"/Images/soldarr.jpeg"} withBN />
+            <Card image={"/Images/pasearlo.jpg"} withBN />
+            <Card image={"/Images/mochile.jpg"} withBN />
+            <Card image={"/Images/job.jpeg"} withBN />
+            <Card image={"/Images/selva1.jpg"} withBN />
           </div>
         </section>
       </Layout>
