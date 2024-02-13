@@ -4,32 +4,26 @@ import projectsList from "../../utils/projectsList";
 import Link from "next/link";
 import Card from "../../components/Card";
 
-// TODO: Projects es una page pero lo moví a components porque por un error no me dejaba deployar 
-
 const Projects = () => {
   return (
     <Layout title="Projects">
       <section className={styles.container}>
-      <h1>Projects</h1>
-      <h2 className={styles.caption}>Some projects explained in details</h2>
+        <h1>Projects</h1>
+        <h2 className={styles.caption}>Some projects explained in details</h2>
 
-      {
-        projectsList.map((project, index) => {
+        {projectsList.map((project, index) => {
           return (
-          <Link key={index} href={`/projects/${[project.id]}`}>
-            <Card 
-            year={project.year}
-            title={project.title}
-            image={project.image}
-            caption={project.caption}
-            />
-          </Link>
-        )})
-      }
-
+            <Link key={index} href={`/projects/${[project.id]}`}>
+              <Card
+                year={project.year}
+                title={project.title}
+                image={project.image}
+                caption={project.caption}
+              />
+            </Link>
+          );
+        })}
       </section>
-      
-
     </Layout>
   );
 };
