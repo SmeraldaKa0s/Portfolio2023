@@ -14,9 +14,7 @@ const CursorFilter = () => {
 
   useEffect(() => {
     if (!window) return;
-    if (window.innerWidth < 600) return;
-
-    setWidth(window.innerWidth * 2);
+    setWidth(window.innerWidth);
 
     document.addEventListener("pointermove", handleFollow);
     () => document.removeEventListener("pointermove", handleFollow);
@@ -28,7 +26,8 @@ const CursorFilter = () => {
       style={{
         left: position.x,
         top: position.y,
-        boxShadow: `0 0 0 ${width}px #000`,
+        boxShadow: `0 0 0 ${width * 2}px #000`,
+        display: width < 600 ? 'none' : 'block',
       }}
     />
   );
