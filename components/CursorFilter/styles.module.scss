@@ -1,0 +1,14 @@
+$cursor-width: 100px;
+
+.cursor {
+  position: fixed;
+  width: $cursor-width;
+  height: $cursor-width;
+  background-color: transparent;
+  box-shadow: 0 0 0 10000px #000;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  mix-blend-mode: color;
+  pointer-events: none;
+}

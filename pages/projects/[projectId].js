@@ -21,8 +21,6 @@ const project = () => {
     <Layout>
       <div>
         <h2>Project</h2>
-        <h1>{title}</h1>
-        <p>{year}</p>
       </div>
     </Layout>
   );

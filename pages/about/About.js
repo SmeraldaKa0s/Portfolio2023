@@ -120,6 +120,9 @@ const About = () => {
             <p className={styles.text4}>ABOUT ME</p>
           </div>
           <div className={styles.imageConteiner}>
+            <Card image={"/Images/pokemon.png"} />
+            <Card image={"/Images/pokemon.png"} />
+            <Card image={"/Images/pokemon.png"} />
             <Card image={"/Images/principal.png"} withBN />
             <Card image={"/Images/talking1.jpeg"} withBN />
             <Card image={"/Images/colgado.png"} withBN />
