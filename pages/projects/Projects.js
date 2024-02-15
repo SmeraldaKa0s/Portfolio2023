@@ -13,13 +13,15 @@ const Projects = () => {
 
         {projectsList.map((project, index) => {
           return (
-            <Link key={index} href={`/projects/${[project.id]}`}>
+            <Link key={index} href={`/projects/${project.id}`} passHref legacyBehavior>
+              <a>
               <Card
                 year={project.year}
                 title={project.title}
                 image={project.image}
                 caption={project.caption}
               />
+              </a>
             </Link>
           );
         })}
