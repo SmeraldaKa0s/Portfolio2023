@@ -11,13 +11,13 @@ const About = () => {
       id: 1,
       name: "MARKET RESEARCH & UX RESEARCHER, UNTREF",
       description: "This is the first item in the list.",
-      time: "2023",
+      time: "2022 - 2023",
     },
     {
       id: 2,
       name: "QA ANALYST & FRONTEND DEVELOPER, ATAWAY",
       description: "This is the second item in the list.",
-      time: "2023",
+      time: "2022 - 2023",
     },
     {
       id: 3,

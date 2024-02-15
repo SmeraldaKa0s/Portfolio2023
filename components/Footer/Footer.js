@@ -14,7 +14,7 @@ const Footer = () => {
           </li>
           <li>
             {" "}
-            <a href="https://twitter.com">TWITTER</a>
+            <a href="https://calendly.com/alexandra-lerner/30min">CALENDLY</a>
           </li>
         </ul>
       </div>
