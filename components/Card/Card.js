@@ -1,19 +1,25 @@
 import styles from "./styles.module.scss";
-import Image from "next/image";
+import ImageNext from "../ImageNext";
 
 const Card = (props) => {
-  const { image = "/Images/colgado.png", title, withBN = false } = props;
+  const {
+    image = "/Images/colgado.png",
+    number,
+    title,
+    caption,
+    withBN = false,
+  } = props;
   const imageClasses = `${styles.image} ${withBN ? styles.withBN : ""}`;
 
   return (
     <article className={styles.card}>
       <div className={imageClasses}>
-        <Image
-          src={image}
-          width="600"
-          height="550"
-          objectFit="cover"
-          alt={title}
+        <ImageNext 
+        src={image}
+        width={600}
+        height={550}
+        alt={title}
+        className={styles.image}
         />
       </div>
     </article>

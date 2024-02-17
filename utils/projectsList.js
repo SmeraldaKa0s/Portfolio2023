@@ -1,13 +1,15 @@
 const projectsList = [
   {
     id: "movie-finder",
+    number: "001",
     title: "Movie Finder",
-    image: "/Images/movie-finder.png",
+    image: "/Images/ne.png",
     year: "2022",
     caption: "Rest Api, React, React Router, Sass, Tailwind, Swiper.",
   },
   {
     id: "pokemon-tft",
+    number: "002",
     title: "Pokemon TFT",
     image: "/Images/pokemon.png",
     year: "2021",
@@ -15,6 +17,7 @@ const projectsList = [
   },
   {
     id: "ahorradas",
+    number: "003",
     title: "Ahorradas",
     image: "/Images/ahorradas.png",
     year: "2021",

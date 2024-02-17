@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import projectsList from "../../utils/projectsList";
 import Layout from "../../components/Layout";
+import ImageNext from "../../components/ImageNext";
 
 const project = () => {
   const router = useRouter();
@@ -22,7 +23,12 @@ const project = () => {
         <h2>{project.title}</h2>
         <p>Year: {project.year}</p>
         <p>Caption: {project.caption}</p>
-        <img src={project.image} alt={project.title} />
+        <ImageNext
+          src={project.image}
+          alt={project.title}
+          width={600}
+          height={550}
+        />
       </div>
     </Layout>
   );
