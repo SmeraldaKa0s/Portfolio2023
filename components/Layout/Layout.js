@@ -12,7 +12,7 @@ const Layout = ({ title, description, children }) => {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <CursorFilter />
+     {/*  <CursorFilter /> */}
       <div className={styles.container}>
         <Nav />
         <main>{children}

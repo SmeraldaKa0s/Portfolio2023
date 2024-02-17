@@ -1,5 +1,26 @@
 .container {
-    @apply flex items-end justify-between mb-20; 
+    @apply flex items-end justify-between mb-20 font-light text-neutral-400;
+    transition: color 0.6s ease;
+}
+.line {
+    @apply border-b-2 border-zinc-800 w-full;
+    opacity: 0.3;
+    transition: color 0.9s ease;
+}
+.container:hover {
+    @apply text-stone-200; 
+}
+
+.container:hover .line {
+    opacity: 2;
+}
+
+.container:hover .card {
+    filter: none; 
+}
+
+.container:hover .text {
+    @apply text-stone-200; 
 }
 
 .box {
@@ -10,16 +31,19 @@
     @apply flex flex-col items-end;
 }
 .title {
-    @apply text-7xl font-thin;
+    @apply text-7xl;
+    white-space: nowrap;
+}
+
+.text {
+    @apply text-sm text-neutral-500;
+    transition: color 0.6s ease;
 }
 
 .card {
-    @apply overflow-hidden relative w-full 2xl:text-2xl rounded;
+    @apply overflow-hidden relative w-full 2xl:text-2xl rounded ml-5;
     min-height: 10rem;
     max-width: 376px;
-}
-
-.line {
-    @apply border-b-2 border-zinc-800 w-full;
-    
+    filter: grayscale(100%);
+    transition: filter 0.6s ease;
 }

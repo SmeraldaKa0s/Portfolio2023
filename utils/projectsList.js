@@ -5,7 +5,7 @@ const projectsList = [
     title: "Movie Finder",
     image: "/Images/ne.png",
     year: "2022",
-    caption: "Rest Api, React, React Router, Sass, Tailwind, Swiper.",
+    caption: "UX RESEARCH, MARKET RESEARCH, PATENT RESEARCH",
   },
   {
     id: "pokemon-tft",

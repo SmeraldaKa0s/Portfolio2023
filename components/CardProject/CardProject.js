@@ -10,7 +10,7 @@ const CardProject = ({ number, title, image, caption }) => {
           <h3 className={styles.title}>{title}</h3>
           {/*  <p>{caption}</p> */}
         </div>
-        <p>{caption}</p>
+        <p className={styles.text}>{caption}</p>
       </div>
       <div className={styles.line}></div>
       <div className={styles.card}>
@@ -23,6 +23,7 @@ const CardProject = ({ number, title, image, caption }) => {
             objectFit="cover"
           />
         </div>
+        {/*   <div className={styles.line}></div> */}
       </div>
     </section>
   );
