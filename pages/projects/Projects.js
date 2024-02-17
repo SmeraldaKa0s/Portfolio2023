@@ -2,7 +2,6 @@ import Layout from "../../components/Layout";
 import styles from "./styles.module.scss";
 import projectsList from "../../utils/projectsList";
 import Link from "next/link";
-import Card from "../../components/Card";
 import CardProject from "../../components/CardProject";
 
 const Projects = () => {

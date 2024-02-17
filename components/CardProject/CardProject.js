@@ -15,15 +15,20 @@ const CardProject = ({ number, title, image, caption }) => {
     </div> */
     <div>
       <div className={styles.content}>
-          <span>{number}</span>
-          <h3>{title}</h3>
-          <p>{caption}</p>
-        </div>
+        <span>{number}</span>
+        <h3>{title}</h3>
+        <p>{caption}</p>
+      </div>
       <div className={styles.card}>
         <div className={styles.image}>
-          <ImageNext src={image} width={600} height={550} alt={title} />
+          <ImageNext
+            src={image}
+            width={600}
+            height={550}
+            alt={title}
+            objectFit="cover"
+          />
         </div>
-        
       </div>
     </div>
   );

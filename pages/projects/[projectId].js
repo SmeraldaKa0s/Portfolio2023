@@ -3,7 +3,7 @@ import projectsList from "../../utils/projectsList";
 import Layout from "../../components/Layout";
 import ImageNext from "../../components/ImageNext";
 
-const project = () => {
+const Project = () => {
   const router = useRouter();
   const { projectId } = router.query;
   const project = projectsList.find((project) => project.id === projectId);
@@ -34,4 +34,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
