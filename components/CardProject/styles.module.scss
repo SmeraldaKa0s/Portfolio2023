@@ -1,0 +1,25 @@
+.container {
+    @apply flex items-end justify-between mb-20; 
+}
+
+.box {
+    @apply mt-12;
+}
+
+.content {
+    @apply flex flex-col items-end;
+}
+.title {
+    @apply text-7xl font-thin;
+}
+
+.card {
+    @apply overflow-hidden relative w-full 2xl:text-2xl rounded;
+    min-height: 10rem;
+    max-width: 376px;
+}
+
+.line {
+    @apply border-b-2 border-zinc-800 w-full;
+    
+}
