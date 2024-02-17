@@ -35,4 +35,4 @@ const CardProject = ({ number, title, image, caption }) => {
 };
 
 export default CardProject;
-//se me ocurrio traer el componente card y acá pasarle el resto de las weas. hay que ver si anda.
+
