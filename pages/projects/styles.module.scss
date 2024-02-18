@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col pt-12;
+    @apply flex flex-col pt-12 w-full h-full;
     h1 {
         @apply text-3xl pt-32 tracking-wider;
     }
@@ -7,4 +7,12 @@
     .caption {
         @apply mt-2 mb-11;
     }
+}
+
+.projects {
+    @apply overflow-y-scroll;
+    height: 500px;
+    scrollbar-width: thin; 
+    scrollbar-color: #5f5f5f5b transparent; 
+    scrollbar-gutter: stable;
 }

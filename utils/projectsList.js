@@ -5,7 +5,7 @@ const projectsList = [
     title: "Movie Finder",
     image: "/Images/ne.png",
     year: "2022",
-    caption: "UX RESEARCH, MARKET RESEARCH, PATENT RESEARCH",
+    caption: "UX Research, Market Research, Patent Research",
   },
   {
     id: "pokemon-tft",
