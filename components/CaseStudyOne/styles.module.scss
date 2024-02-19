@@ -1,0 +1,51 @@
+.container {
+    @apply mt-24;
+}
+
+.content {
+    @apply flex flex-col;
+    text-align: end;
+    position: absolute;
+    left: 21%;
+    transform: translateY(-90%);
+}
+.title {
+    @apply text-7xl;
+    white-space: nowrap;
+}
+
+.card {
+    @apply flex justify-center;
+}
+
+.boxInfo {
+    @apply flex justify-evenly mt-24; 
+
+    .description {
+        @apply max-w-3xl;
+
+        em {
+            font-style: italic;
+          }
+    }
+}
+
+.main {
+    @apply text-2xl;
+}
+
+.tldr {
+    @apply text-zinc-600 mt-8;
+}
+
+.boxRoles {
+    @apply max-w-md;
+}
+
+.subtitle {
+    @apply my-2 font-semibold;
+}
+
+.roles {
+    @apply mb-8;
+}

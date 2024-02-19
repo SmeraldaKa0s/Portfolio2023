@@ -2,7 +2,7 @@ const projectsList = [
   {
     id: "movie-finder",
     number: "001",
-    title: "Movie Finder",
+    title: "Narices Electrónicas",
     image: "/Images/ne.png",
     year: "2022",
     caption: "UX Research, Market Research, Patent Research",

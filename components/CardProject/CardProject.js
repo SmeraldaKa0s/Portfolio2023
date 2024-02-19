@@ -23,7 +23,6 @@ const CardProject = ({ number, title, image, caption }) => {
             objectFit="cover"
           />
         </div>
-        
       </div>
       <div className={`${styles.line} ${styles.sizeRight}`}></div>
     </section>
