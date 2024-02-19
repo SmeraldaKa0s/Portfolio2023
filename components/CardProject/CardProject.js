@@ -12,7 +12,7 @@ const CardProject = ({ number, title, image, caption }) => {
         </div>
         <p className={styles.text}>{caption}</p>
       </div>
-      <div className={styles.line}></div>
+      <div className={`${styles.line} ${styles.sizeLeft}`}></div>
       <div className={styles.card}>
         <div className={styles.image}>
           <ImageNext
@@ -23,8 +23,9 @@ const CardProject = ({ number, title, image, caption }) => {
             objectFit="cover"
           />
         </div>
-        {/*   <div className={styles.line}></div> */}
+        
       </div>
+      <div className={`${styles.line} ${styles.sizeRight}`}></div>
     </section>
   );
 };

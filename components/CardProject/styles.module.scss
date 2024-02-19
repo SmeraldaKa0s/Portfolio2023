@@ -7,12 +7,21 @@
     opacity: 0.3;
     transition: color 0.9s ease;
 }
+
+.sizeLeft {
+    @apply w-3/5;
+}
+
+.sizeRight {
+    width: 10%;
+}
+
 .container:hover {
-    @apply text-stone-200; 
+    @apply text-stone-50; 
 }
 
 .container:hover .line {
-    opacity: 2;
+    opacity: 0.7;
 }
 
 .container:hover .card {
@@ -20,7 +29,7 @@
 }
 
 .container:hover .text {
-    @apply text-stone-200; 
+    @apply text-stone-100; 
 }
 
 .box {
@@ -41,9 +50,11 @@
 }
 
 .card {
-    @apply overflow-hidden relative w-full 2xl:text-2xl rounded ml-5;
+    @apply overflow-hidden relative w-full 2xl:text-2xl rounded mx-5;
     min-height: 10rem;
     max-width: 376px;
     filter: grayscale(100%);
-    transition: filter 0.6s ease;
+    transition: filter 0.9s ease;
+    position: relative;
+    transform: translateY(5%);
 }
