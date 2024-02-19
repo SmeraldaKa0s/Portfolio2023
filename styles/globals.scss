@@ -7,10 +7,13 @@
 
 html,
 body {
-  @apply bg-black text-stone-200;
+  @apply bg-black text-stone-200 overflow-y-scroll;
   padding: 0;
   margin: 0;
   font-family: "Nunito", $default-font;
+  scrollbar-width: thin; 
+  scrollbar-color: #7776765b transparent; 
+  scrollbar-gutter: stable;
 }
 
 a {

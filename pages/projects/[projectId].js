@@ -2,8 +2,15 @@ import { useRouter } from "next/router";
 import projectsList from "../../utils/projectsList";
 import Layout from "../../components/Layout";
 import ImageNext from "../../components/ImageNext";
+import CaseStudyOne from "../../components/CaseStudyOne";
+import CaseStudyTwo from "../../components/CaseStudyTwo";
 
 const Project = () => {
+  const projectComponents = {
+    "movie-finder": CaseStudyOne,
+    "pokemon-tft": CaseStudyTwo,
+  };
+  
   const router = useRouter();
   const { projectId } = router.query;
   const project = projectsList.find((project) => project.id === projectId);
@@ -17,19 +24,13 @@ const Project = () => {
     );
   }
 
+  const ProjectComponent = projectComponents[project.id];
+
   return (
     <Layout>
-      <div>
-        <h2>{project.title}</h2>
-        <p>Year: {project.year}</p>
-        <p>Caption: {project.caption}</p>
-        <ImageNext
-          src={project.image}
-          alt={project.title}
-          width={600}
-          height={550}
-        />
-      </div>
+      <section>
+        <ProjectComponent project={project} />
+      </section>
     </Layout>
   );
 };

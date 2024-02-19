@@ -15,7 +15,7 @@ const Nav = ({ fixed }) => {
   };
 
   return (
-    <nav className={`${styles.container} ${fixed ? styles.fixedTop : ''}`}>
+    <nav className={`${styles.container} ${fixed ? styles.fixedTop : ""}`}>
       <div className={styles.boxName}>
         <Link href="/home">
           <a className={styles.name}>Alekxa</a>
@@ -48,11 +48,12 @@ const Nav = ({ fixed }) => {
           </Link>
         </div>
         <div className={styles.list}>
-          <Link href="/contact">
-            <a className={`${styles.contactLink} ${styles.contactButton}`}>
-              LET&apos;S TALK
-            </a>
-          </Link>
+          <a
+            href="mailto:alek.xandra.lerner@gmail.com"
+            className={`${styles.contactLink} ${styles.contactButton}`}
+          >
+            LET&apos;S TALK
+          </a>
         </div>
       </div>
     </nav>
