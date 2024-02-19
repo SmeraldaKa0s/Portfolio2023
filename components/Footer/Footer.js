@@ -1,19 +1,17 @@
 import styles from "./styles.module.scss";
 
-const Footer = () => {
+const Footer = ({ fixed }) => {
   return (
-    <footer className={styles.container}>
+    <footer className={`${styles.container} ${fixed ? styles.fixedBottom : ''}`}>
       <div>
         <ul className={styles.boxList}>
           <li>
             <a href="https://www.linkedin.com/in/alx-l/"> LINKEDIN</a>
           </li>
           <li>
-            {" "}
             <a href="https://github.com/SmeraldaKa0s">GITHUB</a>
           </li>
           <li>
-            {" "}
             <a href="https://calendly.com/alexandra-lerner/30min">CALENDLY</a>
           </li>
         </ul>
