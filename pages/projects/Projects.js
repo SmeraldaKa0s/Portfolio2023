@@ -3,22 +3,11 @@ import styles from "./styles.module.scss";
 import projectsList from "../../utils/projectsList";
 import Link from "next/link";
 import CardProject from "../../components/CardProject";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
-  const containerRef = useRef(null);
   const [visibleProjects, setVisibleProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-
-  const handleScroll = () => {
-    const container = containerRef.current;
-    if (container) {
-      const { scrollTop, clientHeight, scrollHeight } = container;
-      if (scrollTop + clientHeight >= scrollHeight - 100 && !isLoading) {
-        loadMoreProjects();
-      }
-    }
-  };
 
   const loadMoreProjects = () => {
     setIsLoading(true);
@@ -27,18 +16,34 @@ const Projects = () => {
       visibleProjects.length,
       visibleProjects.length + 3
     );
+
     setVisibleProjects((prevProjects) => [
       ...prevProjects,
       ...nextPageProjects,
     ]);
+
     setIsLoading(false);
   };
 
+  const handleScroll = (e) => {
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+
+    // Avoiding loading to many projects.
+    if (scrollHeight > 20_000) {
+      setVisibleProjects(projectsList)
+      window.scrollTo({ top: 128, behavior: 'instant' })
+    }
+
+    if (scrollTop + clientHeight >= scrollHeight - 100 && !isLoading) {
+      loadMoreProjects();
+    }
+  };
+
   useEffect(() => {
-    const container = containerRef.current;
-    container.addEventListener("scroll", handleScroll);
+    if (!window) return;
+    window.addEventListener("wheel", handleScroll);
     return () => {
-      container.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("wheel", handleScroll);
     };
   }, []);
 
@@ -47,14 +52,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <Layout title="Projects">
+    <Layout title="Projects" config={{ fixedNav: true, fixedFooter: true }}>
       <section className={styles.container}>
         {/*   <h1>Projects</h1>
         <h2 className={styles.caption}>Some projects explained in details</h2> */}
-        <div
-          ref={containerRef}
-          className={styles.projects}
-        >
+        <div className={styles.projects}>
           {visibleProjects.map((project, index) => {
             return (
               <Link

@@ -3,7 +3,7 @@ import Link from "next/link";
 import BurgerMenu from "../BurgerMenu";
 import { useState } from "react";
 
-const Nav = () => {
+const Nav = ({ fixed }) => {
   const [openModalBurger, setOpenModalBurger] = useState(false);
 
   const handleOpenModal = () => {
@@ -15,7 +15,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className={styles.container}>
+    <nav className={`${styles.container} ${fixed ? styles.fixedTop : ''}`}>
       <div className={styles.boxName}>
         <Link href="/home">
           <a className={styles.name}>Alekxa</a>

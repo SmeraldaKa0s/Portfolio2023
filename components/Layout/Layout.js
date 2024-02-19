@@ -4,7 +4,9 @@ import Nav from "../Nav";
 import Footer from "../Footer";
 import CursorFilter from "../CursorFilter";
 
-const Layout = ({ title, description, children }) => {
+const Layout = ({ title, description, config, children }) => {
+  const { fixedNav, fixedFooter } = config || {};
+
   return (
     <>
       <Head>
@@ -14,10 +16,10 @@ const Layout = ({ title, description, children }) => {
       </Head>
      {/*  <CursorFilter /> */}
       <div className={styles.container}>
-        <Nav />
+        <Nav fixed={fixedNav} />
         <main>{children}
         </main>
-        <Footer />
+        <Footer fixed={fixedFooter} />
       </div>
     </>
   );

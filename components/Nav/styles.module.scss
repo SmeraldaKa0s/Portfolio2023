@@ -1,52 +1,54 @@
 .container {
-    @apply flex pt-8 justify-between;
+  @apply flex pt-8 justify-between;
 
-    .boxName {
-        @apply pt-3;
-    }
+  .boxName {
+    @apply pt-3;
+  }
 
-    .name {
-        @apply text-4xl pt-4;
-   
-    }
+  .name {
+    @apply text-4xl pt-4;
+  }
 }
 
 .burgerMenu {
-    @apply flex justify-center flex-col pr-5 lg:hidden items-end;
+  @apply flex justify-center flex-col pr-5 lg:hidden items-end;
 
-    div {
-        @apply h-1 w-8 bg-lime-700;
-        margin-top: 2px;
-    }
+  div {
+    @apply h-1 w-8 bg-lime-700;
+    margin-top: 2px;
+  }
 
-    .line {
-        @apply w-10;
-    }
-} 
+  .line {
+    @apply w-10;
+  }
+}
 
 .box {
-    @apply hidden md:flex; 
+  @apply hidden lg:flex;
 
-.list {
+  .list {
     @apply gap-4 hidden lg:flex flex-1;
 
-
     .linkNav {
-        @apply flex flex-col pt-4 text-xl;
-        padding-right: 200px;
-        min-width: max-content
+      @apply flex flex-col pt-4 text-xl;
+      padding-right: 200px;
+      min-width: max-content;
     }
     .parrafo {
-        @apply text-xs; 
+      @apply text-xs;
     }
+  }
+
+  .contactButton {
+    @apply rounded-3xl border-zinc-100 border px-3 mt-4 flex items-center justify-center;
+    @apply hover:bg-zinc-100 hover:text-black motion-safe:transition-colors motion-safe:duration-300;
+  }
+
+  .contactLink {
+    @apply text-center text-base;
+  }
 }
 
-.contactButton {
-    @apply rounded-3xl border-zinc-100 border px-3 mt-4 flex items-center justify-center; 
-}
-
-.contactLink {
-    @apply text-center text-base ; 
- 
-}
+.fixedTop {
+  @apply fixed px-6 md:px-[4.5rem] md:py-8 left-0 top-0 w-screen backdrop-blur backdrop-brightness-[0.1] z-50;
 }
