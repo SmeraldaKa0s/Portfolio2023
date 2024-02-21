@@ -63,12 +63,14 @@
 }
 .boxHipotesis {
     @apply flex flex-col text-center;
+
+    .card {
+        @apply relative h-full rounded-2xl bg-gradient-to-br from-white/5 to-white/10 shadow-xl m-6 sm:p-10 md:p-1;
+    }
 }
 
 .size {
     @apply max-w-xs;
 }
 
-.card {
-    @apply relative h-full rounded-2xl bg-gradient-to-br from-white/5 to-white/10 shadow-xl m-6 sm:p-10 md:p-1;
-}
+
