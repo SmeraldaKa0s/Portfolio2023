@@ -236,14 +236,19 @@ const CaseStudyOne = ({ project }) => {
             <span className={styles.color}>métodos cualitativos</span>:
           </p>
         </div>
+
         <div>
           <ul className={styles.description}>
             <li className={styles.roles}>
-              <p className={styles.roles}><span className={styles.color}>1. En el escenario cualitativo:</span></p>
+              <p className={styles.roles}>
+                <span className={styles.color}>
+                  1. En el escenario cualitativo:
+                </span>
+              </p>
 
               <p>
                 <span className={styles.color}>
-                ・Dos reuniones con stakeholders y expertos
+                  ・Dos reuniones con stakeholders y expertos
                 </span>
                 <span className={styles.color}></span>
                 donde definimos y validamos las preguntas de investigación
@@ -259,44 +264,52 @@ const CaseStudyOne = ({ project }) => {
                 ¿Qué están tratando de lograr con este proyecto? ¿Qué tareas
                 implica?
               </p>
-              <p className="pt-2.5">¿Qué problemas o dolencias actuales intentan solucionar?</p>
-              <p className={`${"pt-2.5"} ${styles.roles}`}>¿Cómo ha sido su experiencia previa en proyectos similares?</p>
-              <p className={styles.roles}>
-              ・ Un <span className={styles.color}>mapa mental</span> visualizó
-                las ideas y conceptos clave del proyecto.
+              <p className="pt-2.5">
+                ¿Qué problemas o dolencias actuales intentan solucionar?
+              </p>
+              <p className={`${"pt-2.5"} ${styles.roles}`}>
+                ¿Cómo ha sido su experiencia previa en proyectos similares?
               </p>
               <p className={styles.roles}>
-              ・<span className={styles.color}>Focus group</span> revelaron las
-                necesidades y expectativas de los usuarios.
+                ・ Un <span className={styles.color}>mapa mental</span>{" "}
+                visualizó las ideas y conceptos clave del proyecto.
               </p>
-              <p> 
-              ・ La <span className={styles.color}>percepción</span> del público
-                objetivo sobre las soluciones propuestas fue analizada.
+              <p className={styles.roles}>
+                ・<span className={styles.color}>Focus group</span> revelaron
+                las necesidades y expectativas de los usuarios.
+              </p>
+              <p>
+                ・ La <span className={styles.color}>percepción</span> del
+                público objetivo sobre las soluciones propuestas fue analizada.
               </p>
             </li>
             <li>
-              <p className={styles.roles}><span className={styles.color}>2. En el escenario cuantitativo:</span></p>
               <p className={styles.roles}>
                 <span className={styles.color}>
-                ・ Patentes, publicaciones científicas, estudios de mercado y
+                  2. En el escenario cuantitativo:
+                </span>
+              </p>
+              <p className={styles.roles}>
+                <span className={styles.color}>
+                  ・ Patentes, publicaciones científicas, estudios de mercado y
                   proyectos de I+D+i
                 </span>
                 revelaron el estado actual del problema.
               </p>
               <p className={styles.roles}>
-              ・ Una <span className={styles.color}>búsqueda profunda</span> en
-                bases de datos relevantes, abarcando un período de{" "}
+                ・ Una <span className={styles.color}>búsqueda profunda</span>{" "}
+                en bases de datos relevantes, abarcando un período de{" "}
                 <span className={styles.color}>2018 a 2023</span>, brindó
                 información invaluable.
               </p>
               <p className={styles.roles}>
                 <span className={styles.color}>
-                ・  Patrones, tendencias e insights
+                  ・ Patrones, tendencias e insights
                 </span>{" "}
                 fueron extraídos de la información recopilada.
               </p>
               <p className={styles.roles}>
-              ・ La{" "}
+                ・ La{" "}
                 <span className={styles.color}>
                   viabilidad técnica y comercial
                 </span>{" "}
@@ -305,6 +318,50 @@ const CaseStudyOne = ({ project }) => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className={`${styles.card} ${styles.margin}`}>
+        <div className={styles.image}>
+          <ImageNext src="/Images/miroNe.png" width={700} height={400} />
+        </div>
+        <span className={"text-base text-zinc-400"}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          tristique placerat
+        </span>
+      </div>
+      <div className={`${styles.card} ${styles.margin}`}>
+        <div className={styles.image}>
+          <ImageNext src="/Images/mapaBlur.png" width={700} height={400} />
+        </div>
+        <span className={"text-base text-zinc-400"}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          tristique placerat
+        </span>
+      </div>
+      <div className={`${styles.card} ${styles.margin}`}>
+        <div className={styles.image}>
+          <ImageNext src="/Images/patenteBlur.png" width={700} height={400} />
+        </div>
+        <span className={"text-base text-zinc-400"}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          tristique placerat
+        </span>
+      </div>
+      <div className={styles.imageConteiner}>
+        
+          <ImageNext src="/Images/bench1.png" width={200} height={100} />
+          <ImageNext src="/Images/bench2.png" width={200} height={100} />
+          <ImageNext src="/Images/bench3.png" width={200} height={100} />
+          <ImageNext src="/Images/bench4.png" width={200} height={100} />
+          <ImageNext src="/Images/bench5.png" width={200} height={100} />
+          <ImageNext src="/Images/bench6.png" width={200} height={100} />
+          <ImageNext src="/Images/bench7.png" width={200} height={100} />
+          <ImageNext src="/Images/bench8.png" width={200} height={100} />
+          <ImageNext src="/Images/bench9.png" width={200} height={100} />
+          <ImageNext src="/Images/bench10.png" width={200} height={100} />
+          <ImageNext src="/Images/bench11.png" width={200} height={100} />
+          <ImageNext src="/Images/bench12.png" width={200} height={100} />
+          <ImageNext src="/Images/bench13.png" width={200} height={100} />
+        
       </div>
     </div>
   );
