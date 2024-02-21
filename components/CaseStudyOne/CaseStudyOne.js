@@ -181,11 +181,11 @@ const CaseStudyOne = ({ project }) => {
         <div className={styles.roles}>
           <h3>Hipótesis</h3>
         </div>
-        <div
-          className={`${styles.hipotesis} ${styles.containerHipotesis}`}
-        >
+        <div className={`${styles.hipotesis} ${styles.containerHipotesis}`}>
           <div className={`${styles.boxHipotesis} ${styles.card}`}>
-            <p>Hipótesis Descriptiva</p>
+            <p>
+              Hipótesis <span className={styles.color}>Descriptiva</span>
+            </p>
             <p className={styles.size}>
               Los olores del río contaminado impactan la salud de los vecinos,
               pero pueden ser detectados por narices electrónicas con IA,
@@ -193,17 +193,24 @@ const CaseStudyOne = ({ project }) => {
               para mejorar la calidad del aire.
             </p>
           </div>
-          <div className={"grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 lg:gap-8"}
+          <div
+            className={
+              "grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 lg:gap-8"
+            }
           >
             <div className={styles.card}>
-              <p>Hipótesis Explicativa</p>
+              <p>
+                Hipótesis <span className={styles.color}>Explicativa</span>
+              </p>
               <p className={styles.size}>
                 El reporte de olores a través de la app móvil por los vecinos
                 contribuirá a mejorar su calidad de vida.
               </p>
             </div>
             <div className={styles.card}>
-              <p>Hipótesis Predictiva </p>
+              <p>
+                Hipótesis <span className={styles.color}>Predictiva</span>{" "}
+              </p>
               <p className={styles.size}>
                 El uso de las narices electrónicas por parte de las autoridades
                 ambientales puede conducir a la identificación y sanción de las
@@ -211,6 +218,92 @@ const CaseStudyOne = ({ project }) => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className={`${styles.boxProblem} ${styles.margin}`}>
+        <div
+          className={`${styles.boxProblem} ${styles.roles} ${styles.description}`}
+        >
+          <span className={styles.roles}>Metodología de investigación</span>
+          <p>
+            La{" "}
+            <span className={styles.color}>
+              metodología de investigación mixta
+            </span>{" "}
+            utilizada tiene un enfoque integral que equilibra la precisión de
+            los <span className={styles.color}>datos cuantitativos</span> y la
+            riqueza de los{" "}
+            <span className={styles.color}>métodos cualitativos</span>:
+          </p>
+        </div>
+        <div>
+          <ul className={styles.description}>
+            <li className={styles.roles}>
+              <p className={styles.roles}><span className={styles.color}>1. En el escenario cualitativo:</span></p>
+
+              <p>
+                <span className={styles.color}>
+                ・Dos reuniones con stakeholders y expertos
+                </span>
+                <span className={styles.color}></span>
+                donde definimos y validamos las preguntas de investigación
+                utilizando entrevistas en profundidad. Estas entrevistas nos
+                permitieron comprender a fondo sus motivaciones, necesidades y
+                expectativas mediante preguntas abiertas y exploratorias.
+                Utilizamos técnicas como
+                <span className={styles.color}>TEDW</span> (Tareas,
+                Experiencias, Dolencias y Deseos) para indagar sobre el
+                proyecto. Algunos ejemplos de preguntas realizadas:
+              </p>
+              <p className="pt-2.5">
+                ¿Qué están tratando de lograr con este proyecto? ¿Qué tareas
+                implica?
+              </p>
+              <p className="pt-2.5">¿Qué problemas o dolencias actuales intentan solucionar?</p>
+              <p className={`${"pt-2.5"} ${styles.roles}`}>¿Cómo ha sido su experiencia previa en proyectos similares?</p>
+              <p className={styles.roles}>
+              ・ Un <span className={styles.color}>mapa mental</span> visualizó
+                las ideas y conceptos clave del proyecto.
+              </p>
+              <p className={styles.roles}>
+              ・<span className={styles.color}>Focus group</span> revelaron las
+                necesidades y expectativas de los usuarios.
+              </p>
+              <p> 
+              ・ La <span className={styles.color}>percepción</span> del público
+                objetivo sobre las soluciones propuestas fue analizada.
+              </p>
+            </li>
+            <li>
+              <p className={styles.roles}><span className={styles.color}>2. En el escenario cuantitativo:</span></p>
+              <p className={styles.roles}>
+                <span className={styles.color}>
+                ・ Patentes, publicaciones científicas, estudios de mercado y
+                  proyectos de I+D+i
+                </span>
+                revelaron el estado actual del problema.
+              </p>
+              <p className={styles.roles}>
+              ・ Una <span className={styles.color}>búsqueda profunda</span> en
+                bases de datos relevantes, abarcando un período de{" "}
+                <span className={styles.color}>2018 a 2023</span>, brindó
+                información invaluable.
+              </p>
+              <p className={styles.roles}>
+                <span className={styles.color}>
+                ・  Patrones, tendencias e insights
+                </span>{" "}
+                fueron extraídos de la información recopilada.
+              </p>
+              <p className={styles.roles}>
+              ・ La{" "}
+                <span className={styles.color}>
+                  viabilidad técnica y comercial
+                </span>{" "}
+                de las tecnologías identificadas fue cuidadosamente evaluada.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
