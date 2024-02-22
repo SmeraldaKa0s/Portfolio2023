@@ -2,7 +2,7 @@
   @apply overflow-hidden relative w-full 2xl:text-2xl;
   min-height: 15rem;
   max-width: 376px;
-  //box-shadow: 0px 6px 30px rgba(132, 145, 170, 0.2);
+
 
   .image {
     min-height: 58%;
@@ -13,12 +13,8 @@
   .withBN {
     filter: saturate(0);
 
-    &:hover {
+   /*  &:hover {
       filter: saturate(1);
-    }
-  }
-
-  &:hover {
-    box-shadow: 0px 6px 30px rgba(100, 100, 100, 0.3);
+    } */
   }
 }

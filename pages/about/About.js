@@ -66,8 +66,8 @@ const About = () => {
             <p className={styles.mainText}>
               {" "}
               Avocada a la transdiciplina. Me expreso investigando y diseñando
-              productos cuidadosamente elaborados. Me gusta pensar que lo que
-              creamos tiene que mejorar vidas y ser duradero.{" "}
+              productos cuidadosamente elaborados. Ayudo a startups y equipos de
+              diseño a construir experiencias y procesos duraderos.{" "}
             </p>
           </div>
 
@@ -80,31 +80,31 @@ const About = () => {
                   producto que integre ia.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Anteriormente, tuve diversos roles que ampliaron mis
-                  perspectiva a la hora de desarrollar tecnologia, haber pasado
-                  por el rol de qa analyst, frotend development y researcher me
-                  entrenaron los ojos y tendieron un puente hacia la constante
-                  busqueda de mejora y calidad.
+                  Anteriormente, tuve diversos roles que ampliaron mi
+                  perspectiva a la hora de desarrollar tecnología. Haber pasado
+                  por el rol de QA Analyst, Frontend Development y Researcher me
+                  moldearon una mentalidad orientada hacia la constante búsqueda
+                  de mejora y calidad.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Antes de diseñar para la web me dedicaba a la bibliotecologia,
+                  Antes de diseñar para la web me dedicaba a la Bibliotecologia,
                   las fuentes de informacion son muy importantes para mi.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Y además estudie artes del fuego, filosofia, y artes
-                  electronicas, y cosas que ya no recuerdo.{" "}
+                  Además estudie Artes del Fuego, Filosofia, y Artes
+                  Electrónicas.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
                   Todos estos temas tienen un impacto significativo en cómo
                   inicio y desarrollo mis procesos creativos, marcando la pauta
-                  de cómo percibo el desarrollo web hoy en día.
+                  de cómo percibo el desarrollo de productos hoy en día.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
                   Cuando no estoy trabajando, normalmente estoy al aire libre, y
                   tambien diseño! hago estudios paisajisticos enfocados en flora
                   nativa, lo que me lleva a querer estar mucho tiempo en selvas,
                   bosques y diversidades vegetales para seguir reconociendo ese
-                  mundo de relaciones complejas; argentina -el mejor país del
+                  mundo de relaciones complejas. Argentina -el mejor país del
                   mundo- tiene muchos biomas por explorar.{" "}
                 </p>
               </div>
