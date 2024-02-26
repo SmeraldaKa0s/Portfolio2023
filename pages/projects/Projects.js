@@ -71,6 +71,7 @@ const Projects = () => {
                     title={project.title}
                     image={project.image}
                     caption={project.caption}
+                    titleClassName="text-7xl whitespace-nowrap"
                   />
                 </a>
               </Link>

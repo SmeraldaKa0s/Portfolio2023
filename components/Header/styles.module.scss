@@ -1,5 +1,3 @@
-
-
 .container {
     @apply mt-11 flex flex-col;
 
@@ -11,27 +9,34 @@
 .boxParrafo {
     @apply flex justify-center;
 
-
-.parrafo {
-    @apply text-base text-center font-light text-white flex justify-center;
-    max-width: 20rem;
-}
+    .parrafo {
+        @apply text-xl text-center font-light text-white flex justify-center;
+        max-width: 44rem;
+    }
 }
 
 
 .box {
-    @apply ml-9; 
-
+    @apply ml-9;
 }
 
 .button {
     @apply flex text-sm pt-6 relative mt-4 right-9;
 }
- .iconArrow {
-    @apply h-8 w-8; 
-} 
+.iconArrow {
+    @apply h-8 w-8;
+}
 
 .underLine {
     @apply absolute w-1/5 left-16 bg-black;
     height: 1px;
+}
+
+.story {
+    @apply flex justify-center mt-2 underline underline-offset-8;
+    padding-right: 34rem;
+}
+
+.icon {
+    @apply h-4 w-4;
 }

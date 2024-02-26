@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Modal from "../../components/Modal";
 import Layout from "../../components/Layout";
 import styles from "./styles.module.scss";
 import Header from "../../components/Header";
-import { useEffect } from "react";
+import projectsList from "../../utils/projectsList";
+import Link from "next/link";
+import CardHome from "../../components/CardHome/CardHome";
 
 const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -12,8 +14,8 @@ const Home = () => {
     "/Images/hello.svg",
     "/Images/work.svg",
     "/Images/developer.svg",
-    "/Images/creative.svg"
-  ]
+    "/Images/creative.svg",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,12 +34,44 @@ const Home = () => {
     <Layout title="Home">
       <Header
         image={images[currentImageIndex]}
-        caption="Hi! I'm Alexandra, a versatile professional with a background in UX Research, UX/UI Design, and Web Development.
-         Interesed about making distinctive experiences."
+        caption={
+          <span>
+            <strong>Alexandra</strong> is a versatile professional with a
+            background in UX/UI Design, UX Research and Frontend Development.
+            Interesed about making distinctive experiences.
+          </span>}
         className={styles.container}
+        story="Keep reading"
       />
+      <section className={styles.container}>
+        <h1 className={styles.boxProject}>
+          <span className={styles.negrita}>Selected</span> Projects
+        </h1>
+
+        <div className={styles.projects}>
+          {projectsList.map((project, index) => {
+            return (
+              <Link
+                key={index}
+                href={`/projects/${project.id}`}
+                passHref
+                legacyBehavior
+              >
+                <a>
+                  <CardHome
+                    number={project.number}
+                    title={project.title}
+                    image={project.image}
+                    caption={project.caption}
+                    titleClassName="text-4xl whitespace-nowrap"
+                  />
+                </a>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
     </Layout>
-    
   );
 };
 

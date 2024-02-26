@@ -1,13 +1,14 @@
 import styles from "./styles.module.scss";
 import ImageNext from "../ImageNext";
 
-const CardProject = ({ number, title, image, caption }) => {
+const CardProject = ({ number, title, image, caption, titleClassName }) => {
+  
   return (
     <section className={styles.container}>
       <div className={styles.box}>
         <div className={styles.content}>
           <span>{number}</span>
-          <h3 className={styles.title}>{title}</h3>
+          <h3 className={`${styles.title} ${titleClassName}`}>{title}</h3>
           {/*  <p>{caption}</p> */}
         </div>
         <p className={styles.text}>{caption}</p>

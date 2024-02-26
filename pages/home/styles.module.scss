@@ -1,3 +1,15 @@
 .container {
     @pply items-center;
 }
+
+.projects {
+    @apply flex justify-evenly;
+}
+
+.boxProject {
+    @apply text-4xl mt-28 mb-12;
+}
+
+.negrita {
+    @apply font-bold;
+}

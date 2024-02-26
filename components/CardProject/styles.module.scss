@@ -39,10 +39,6 @@
 .content {
     @apply flex flex-col items-end;
 }
-.title {
-    @apply text-7xl;
-    white-space: nowrap;
-}
 
 .text {
     @apply text-sm text-neutral-500;
