@@ -11,10 +11,11 @@ const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
+    "/Images/UI.svg",
+    "/Images/DESIGNER.svg",
+    "/Images/RESEARCHER.svg",
     "/Images/hello.svg",
     "/Images/work.svg",
-    "/Images/developer.svg",
-    "/Images/creative.svg",
   ];
 
   useEffect(() => {
@@ -45,7 +46,7 @@ const Home = () => {
       />
       <section className={styles.container}>
         <h1 className={styles.boxProject}>
-          <span className={styles.negrita}>Selected</span> Projects
+          Selected Projects
         </h1>
 
         <div className={styles.projects}>
@@ -63,7 +64,7 @@ const Home = () => {
                     title={project.title}
                     image={project.image}
                     caption={project.caption}
-                    titleClassName="text-4xl whitespace-nowrap"
+                    titleClassName="text-2xl whitespace-nowrap"
                   />
                 </a>
               </Link>

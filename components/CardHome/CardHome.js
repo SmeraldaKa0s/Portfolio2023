@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import ImageNext from "../ImageNext";
 
-const CardHome = ({ number, title, image, caption, titleClassName }) => {
+const CardHome = ({ title, image, caption, titleClassName }) => {
   return (
     <section className={styles.container}>
       <div>

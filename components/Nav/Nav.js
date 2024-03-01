@@ -18,7 +18,7 @@ const Nav = ({ fixed }) => {
     <nav className={`${styles.container} ${fixed ? styles.fixedTop : ""}`}>
       <div className={styles.boxName}>
         <Link href="/home">
-          <a className={styles.name}>Alekxa</a>
+          <a className={styles.name}>Alexa</a>
         </Link>
       </div>
       <div className={styles.burgerMenu} onClick={handleOpenModal}>

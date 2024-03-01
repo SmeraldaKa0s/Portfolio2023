@@ -1,5 +1,5 @@
 .container {
-    @pply items-center;
+  @apply items-center mb-8;
 }
 
 .projects {
@@ -7,7 +7,7 @@
 }
 
 .boxProject {
-    @apply text-4xl mt-28 mb-12;
+    @apply text-5xl mt-36 mb-24;
 }
 
 .negrita {

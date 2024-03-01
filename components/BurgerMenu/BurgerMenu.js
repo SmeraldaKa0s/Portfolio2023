@@ -13,7 +13,7 @@ const BurgerMenu = ({ handleCloseModal, isOpen }) => {
           onClick={handleCloseModal}
           type="quiet"
         />
-        <p className={styles.title}>Alekxa</p>
+        <p className={styles.title}>Alexa</p>
         <ul className={styles.boxOptions}>
           <Link href="/home">HOME</Link>
           <Link href="/about">ABOUT</Link>

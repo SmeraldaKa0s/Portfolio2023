@@ -35,7 +35,7 @@ const CaseStudyOne = ({ project }) => {
             <em>narices electrónicas</em>, dispositivos avanzados capaces de
             detectar y clasificar diferentes tipos de olores. El objetivo fue
             sentar las bases para el desarrollo de un dispositivo entrenado con
-            machine learning y una aplicación móvil para los vecinos de zonas
+            inteligencia artificial y una aplicación móvil para los vecinos de zonas
             afectadas por la contaminación.
           </p>
           <div>
