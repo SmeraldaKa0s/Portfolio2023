@@ -4,11 +4,13 @@ import Layout from "../../components/Layout";
 import ImageNext from "../../components/ImageNext";
 import CaseStudyOne from "../../components/CaseStudyOne";
 import CaseStudyTwo from "../../components/CaseStudyTwo";
+import CaseStudyThree from "../../components/CaseStudyThree";
 
 const Project = () => {
   const projectComponents = {
-    "movie-finder": CaseStudyOne,
-    "pokemon-tft": CaseStudyTwo,
+    "ia-olfativa": CaseStudyOne,
+    "fireboard": CaseStudyTwo,
+    "primavera": CaseStudyThree,
   };
   
   const router = useRouter();
@@ -16,7 +18,7 @@ const Project = () => {
   const project = projectsList.find((project) => project.id === projectId);
   if (!project) {
     return (
-      <Layout>
+      <Layout title="Projects">
         <div>
           <h2>Project not found</h2>
         </div>
@@ -27,7 +29,7 @@ const Project = () => {
   const ProjectComponent = projectComponents[project.id];
 
   return (
-    <Layout>
+    <Layout title={project.title}>
       <section>
         <ProjectComponent project={project} />
       </section>

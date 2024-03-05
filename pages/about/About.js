@@ -9,21 +9,21 @@ const About = () => {
   const items = [
     {
       id: 1,
-      name: "MARKET RESEARCH & UX RESEARCHER, UNTREF",
+      name: "UX/UI Designer & Developer, Self Emproyed",
       description: "This is the first item in the list.",
-      time: "2022 - 2023",
+      time: "2021 - Now",
     },
     {
       id: 2,
-      name: "QA ANALYST & FRONTEND DEVELOPER, ATAWAY",
+      name: "Market Research & UX Research, UNTREF",
       description: "This is the second item in the list.",
       time: "2022 - 2023",
     },
     {
       id: 3,
-      name: "UX/UI DESIGNER & DEVELOPER, SELF EMPLOYED",
+      name: "QA Analyst & Frontend Developer, ATAWAY",
       description: "This is the third item in the list.",
-      time: "2021 - Present",
+      time: "2022 - 2023",
     },
   ];
   /**

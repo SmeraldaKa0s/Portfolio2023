@@ -4,7 +4,7 @@ import Nav from "../Nav";
 import Footer from "../Footer";
 import CursorFilter from "../CursorFilter";
 
-const Layout = ({ title, description, config, children }) => {
+const Layout = ({ title, description, config, sectionTitle, children }) => {
   const { fixedNav, fixedFooter } = config || {};
 
   return (
