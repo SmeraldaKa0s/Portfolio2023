@@ -1,6 +1,9 @@
 import styles from "./styles.module.scss";
 import ImageNext from "../../components/ImageNext";
 
+//https://github.com/MinJieLiu/react-photo-view
+//usar para las imágenes
+
 const CaseStudyThree = ({ project }) => {
   return (
     <div className={`${styles.margin} ${styles.container}`}>
@@ -86,7 +89,12 @@ const CaseStudyThree = ({ project }) => {
       </div>
       <div className={`${styles.card} ${styles.margin}`}>
         <div className={styles.image}>
-          <ImageNext src="/Images/Mapamental.jpg" width={900} height={700} />
+          <ImageNext
+            unoptimized
+            src="/Images/Mapamental.jpg"
+            width={900}
+            height={700}
+          />
         </div>
         <span className={"text-base text-zinc-400"}>
           Mind map of the immersion phase to establish hierarchies and structure
@@ -109,10 +117,38 @@ const CaseStudyThree = ({ project }) => {
           </p>
           <p className={`${styles.description} ${styles.roles}`}>
             También realicé una investigación comparativa para aprender de
-            nuestros principales competidores e identifiqué atributos clave de
+            competidores directos e indirectos e identifiqué atributos clave de
             nuestro público objetivo que se entregaron mediante protopersonas.
           </p>
         </div>
+      </div>
+      <div className={styles.imageConteiner}>
+        <div
+          className="row-span-2 grid place-right"
+        >
+          <ImageNext
+            unoptimized
+            src="/Images/benchmarkP.png"
+            width={400}
+            height={800}
+            objectFit="contain"
+          />
+        </div>
+        
+          <ImageNext
+            unoptimized
+            src="/Images/matrix.jpg"
+            width={700}
+            height={400}
+          />
+        
+          <ImageNext
+            unoptimized
+            src="/Images/proto.png"
+            width={800}
+            height={400}
+            //objectFit="contain"
+          />
       </div>
       <div className={`${styles.boxProblem} ${styles.margin}`}>
         <div className={styles.roles}>
