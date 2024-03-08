@@ -170,7 +170,7 @@ const CaseStudyThree = ({ project }) => {
           <ul className={`${styles.description} ${styles.roles}`}>
             What I did:
             <li>・User Flows</li>
-            <li>・Information Architecture</li>
+            <li>・Sitemap</li>
             <li>・Lo Fi and Hi Fi Wireframes</li>
             <li>・1:1 Usability Testing with team members and users</li>
           </ul>
