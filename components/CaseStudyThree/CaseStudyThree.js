@@ -176,6 +176,20 @@ const CaseStudyThree = ({ project }) => {
           </ul>
         </div>
       </div>
+      <div className={`${styles.card} ${styles.margin}`}>
+        <div className={styles.image}>
+          <ImageNext
+            unoptimized
+            src="/Images/userFlow.png"
+            width={900}
+            height={700}
+          />
+        </div>
+        {/* <span className={"text-base text-zinc-400"}>
+          Mind map of the immersion phase to establish hierarchies and structure
+          elements by categories.
+        </span> */}
+      </div>
     </div>
   );
 };
