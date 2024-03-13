@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import ImageNext from "../../components/ImageNext";
 
+
 //https://github.com/MinJieLiu/react-photo-view
 //usar para las imágenes
 
@@ -123,9 +124,7 @@ const CaseStudyThree = ({ project }) => {
         </div>
       </div>
       <div className={styles.imageConteiner}>
-        <div
-          className="row-span-2 grid place-right"
-        >
+        <div className="row-span-2 grid place-right">
           <ImageNext
             unoptimized
             src="/Images/benchmarkP.png"
@@ -134,21 +133,21 @@ const CaseStudyThree = ({ project }) => {
             objectFit="contain"
           />
         </div>
-        
-          <ImageNext
-            unoptimized
-            src="/Images/matrix.jpg"
-            width={700}
-            height={400}
-          />
-        
-          <ImageNext
-            unoptimized
-            src="/Images/proto.png"
-            width={800}
-            height={400}
-            //objectFit="contain"
-          />
+
+        <ImageNext
+          unoptimized
+          src="/Images/matri.png"
+          width={700}
+          height={400}
+        />
+
+        <ImageNext
+          unoptimized
+          src="/Images/proto.png"
+          width={800}
+          height={400}
+          //objectFit="contain"
+        />
       </div>
       <div className={`${styles.boxProblem} ${styles.margin}`}>
         <div className={styles.roles}>
@@ -176,19 +175,49 @@ const CaseStudyThree = ({ project }) => {
           </ul>
         </div>
       </div>
-      <div className={`${styles.card} ${styles.margin}`}>
-        <div className={styles.image}>
+      <div className="grid items-center grid-cols-2 mt-16;">
+        <div className="row-span-2 grid place-right">
           <ImageNext
             unoptimized
             src="/Images/userFlow.png"
-            width={900}
+            width={400}
+            height={800}
+            objectFit="contain"
+          />
+        </div>
+        <div className="mb-20">
+          <ImageNext
+            unoptimized
+            src="/Images/sitemap.png"
+            width={750}
+            height={400}
+          />
+        </div>
+        <ImageNext
+          unoptimized
+          src="/Images/styleguide.png"
+          width={400}
+          height={1000}
+          //objectFit="contain"
+        />
+      </div>
+      <div className="flex justify-between">
+        <div className={styles.image}>
+          <ImageNext
+            unoptimized
+            src="/Images/grid.png"
+            width={400}
             height={700}
           />
         </div>
-        {/* <span className={"text-base text-zinc-400"}>
-          Mind map of the immersion phase to establish hierarchies and structure
-          elements by categories.
-        </span> */}
+        <div>
+        <ImageNext
+            unoptimized
+            src="/Images/wireframe.png"
+            width={1000}
+            height={700}
+          />
+        </div>
       </div>
     </div>
   );
