@@ -10,21 +10,23 @@
     @apply text-2xl;
 }
 
+.gradient {
+    @apply absolute bg-gradient-to-t from-0% from-black to-70% to-transparent w-full left-0 -mb-4;
+    bottom: 0;
+}
 
 .content {
-    @apply flex flex-col;
-    text-align: end;
-    position: absolute;
-    left: 21%;
-    transform: translateY(-90%);
+    @apply flex flex-col w-fit;
+    text-align: start;
 }
+
 .title {
-    @apply text-7xl;
+    @apply text-7xl w-fit pl-4;
     white-space: nowrap;
 }
 
 .card {
-    @apply flex justify-center items-center flex-col;
+    @apply flex justify-center items-center flex-col relative w-fit m-auto;
 }
 
 .boxInfo {

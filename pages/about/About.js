@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout";
 import styles from "./styles.module.scss";
-import Icon from "../../components/Icon";
-import cv from "../../public/cv.pdf";
+// import Icon from "../../components/Icon";
+// import cv from "../../public/cv.pdf";
 import List from "../../components/List";
 import Card from "../../components/Card/Card";
 

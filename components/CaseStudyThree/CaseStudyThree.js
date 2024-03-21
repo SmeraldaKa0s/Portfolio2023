@@ -17,11 +17,13 @@ const CaseStudyThree = ({ project }) => {
             height={600}
           />
         </div>
-      </div>
-      <div className={styles.content}>
-        <span>{project.number}</span>
-        <h2 className={styles.title}>{project.title}</h2>
-        {/*  <p>{caption}</p> */}
+        <div className={styles.gradient}>
+          <div className={styles.content}>
+            <span className="text-right">{project.number}</span>
+            <h2 className={styles.title}>{project.title}</h2>
+            {/*  <p>{caption}</p> */}
+          </div>
+        </div>
       </div>
       <div className={styles.boxInfo}>
         <div className={styles.description}>
@@ -146,7 +148,7 @@ const CaseStudyThree = ({ project }) => {
           src="/Images/proto.png"
           width={800}
           height={400}
-          //objectFit="contain"
+        //objectFit="contain"
         />
       </div>
       <div className={`${styles.boxProblem} ${styles.margin}`}>
@@ -198,7 +200,7 @@ const CaseStudyThree = ({ project }) => {
           src="/Images/styleguide.png"
           width={400}
           height={1000}
-          //objectFit="contain"
+        //objectFit="contain"
         />
       </div>
       <div className="flex justify-between">
@@ -211,7 +213,7 @@ const CaseStudyThree = ({ project }) => {
           />
         </div>
         <div>
-        <ImageNext
+          <ImageNext
             unoptimized
             src="/Images/wireframe.png"
             width={1000}

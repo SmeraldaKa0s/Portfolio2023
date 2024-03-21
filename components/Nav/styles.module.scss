@@ -34,6 +34,12 @@
       padding-right: 200px;
       min-width: max-content;
     }
+
+    .info{
+      @apply text-xs flex flex-col pt-4 text-neutral-700;
+      padding-right: 200px;
+      min-width: max-content;
+    }
     .parrafo {
       @apply text-xs;
     }
