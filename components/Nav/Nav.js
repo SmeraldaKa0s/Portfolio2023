@@ -33,7 +33,7 @@ const Nav = ({ fixed }) => {
       <div className={styles.box}>
         <div className={styles.list}>
           <span className={styles.info}>
-            Info: I'm still working on the portfolio ☹️
+            Info: I&apos;m still working on the portfolio ☹️
           </span>
         </div>
         <div className={styles.list}>
