@@ -2,7 +2,7 @@ const projectsList = [
   {
     id: "ia-olfativa",
     number: "001",
-    title: "AI Olfativa - App Mobile",
+    title: "Olfactory AI - App Mobile",
     image: "/Images/wallpapper3.png",
     year: "2022",
     caption: "UX Research, Market Research, Patent Research",

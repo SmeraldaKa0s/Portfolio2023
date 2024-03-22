@@ -64,52 +64,46 @@ const About = () => {
 
           <div className={styles.mainBox}>
             <p className={styles.mainText}>
-              {" "}
-              Avocada a la transdiciplina. Me expreso investigando y diseñando
-              productos cuidadosamente elaborados. Ayudo a startups y equipos de
-              diseño a construir experiencias y procesos duraderos.{" "}
+              Oriented to transdisciplinarity. I express myself through researching and designing carefully crafted products.
+              I help startups and design teams build lasting experiences and processes.
+
             </p>
           </div>
 
           <article className={styles.section}>
             <div className={styles.centerAbout}>
               <div className={styles.centerContent}>
-                <p className={styles.subtext}>COSAS QUE ME GUSTAN</p>
+                <p className={styles.subtext}>WHAT I'M UP TO</p>
                 <p className={styles.about}>
-                  Actualmente estoy investigando los interticios en el diseño de
-                  producto que integre ia.
+                  I&apos;m currently exploring the product design process that integrates AI and
+                  experimenting with No Code tools to craft better prototypes.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Anteriormente, tuve diversos roles que ampliaron mi
-                  perspectiva a la hora de desarrollar tecnología. Haber pasado
-                  por el rol de QA Analyst, Frontend Development y Researcher me
-                  moldearon una mentalidad orientada hacia la constante búsqueda
-                  de mejora y calidad.
+                  Previously, I held various roles that broadened my perspective when developing technology.
+                  Going through positions such as QA Analyst, Frontend Development, and Researcher,
+                  I have developed a mindset oriented towards a continuous pursuit of improvement and quality.
+
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Antes de diseñar para la web me dedicaba a la Bibliotecologia,
-                  las fuentes de informacion son muy importantes para mi.
+                Before designing for the web, I worked in Library Science, 
+                where I learned the importance of curated information sources for user-centric design in UX/UI.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Además estudie Artes del Fuego, Filosofia, y Artes
-                  Electrónicas.
+                  In addition, I studied a bit of Fire Arts, Philosophy, and Electronic Arts.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Todos estos temas tienen un impacto significativo en cómo
-                  inicio y desarrollo mis procesos creativos, marcando la pauta
-                  de cómo percibo el desarrollo de productos hoy en día.
+                  All these topics have a significant impact on how I start and develop my creative processes,
+                  setting the tone for how I perceive product development today.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
-                  Cuando no estoy trabajando, normalmente estoy al aire libre, y
-                  tambien diseño! hago estudios paisajisticos enfocados en flora
-                  nativa, lo que me lleva a querer estar mucho tiempo en selvas,
-                  bosques y diversidades vegetales para seguir reconociendo ese
-                  mundo de relaciones complejas. Argentina -el mejor país del
-                  mundo- tiene muchos biomas por explorar.{" "}
+                  When I&apos;m not working, I&apos;m usually outdoors, and I also design!
+                  I focus on landscape studies centered on native flora, which drives me to spend a lot of time in jungles,
+                  forests, and diverse plant ecosystems to continue recognizing that world of complex relationships.
+                  Argentina - the best country in the world - has many biomes to explore.
                 </p>
               </div>
               <div className={styles.list}>
-                <h3>EXPERIENCIA</h3>
+                <h3>EXPERIENCE</h3>
                 <List items={items} />
               </div>
             </div>
