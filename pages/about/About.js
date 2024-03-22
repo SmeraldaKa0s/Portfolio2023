@@ -73,7 +73,7 @@ const About = () => {
           <article className={styles.section}>
             <div className={styles.centerAbout}>
               <div className={styles.centerContent}>
-                <p className={styles.subtext}>WHAT I'M UP TO</p>
+                <p className={styles.subtext}>WHAT I&apos;M UP TO</p>
                 <p className={styles.about}>
                   I&apos;m currently exploring the product design process that integrates AI and
                   experimenting with No Code tools to craft better prototypes.
