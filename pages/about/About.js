@@ -76,7 +76,7 @@ const About = () => {
                 <p className={styles.subtext}>WHAT I&apos;M UP TO</p>
                 <p className={styles.about}>
                   I&apos;m currently exploring the product design process that integrates AI and
-                  experimenting with No Code tools to craft better prototypes.
+                  experimenting with No-Code tools to craft better prototypes.
                 </p>
                 <p className={`${styles.about} ${styles.margin}`}>
                   Previously, I held various roles that broadened my perspective when developing technology.

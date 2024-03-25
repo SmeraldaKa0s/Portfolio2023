@@ -56,5 +56,5 @@
 }
 
 .fixedTop {
-  @apply fixed px-6 md:px-[4.5rem] md:py-8 left-0 top-0 w-screen backdrop-blur backdrop-brightness-[0.1] z-50;
+  @apply fixed px-6 md:px-[4.5rem] md:py-8 left-0 top-0 w-screen backdrop-blur z-50;
 }
