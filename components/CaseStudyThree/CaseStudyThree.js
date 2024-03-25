@@ -40,7 +40,7 @@ const CaseStudyThree = ({ project }) => {
         <div className={styles.boxRoles}>
           <p className={styles.subtitle}>MY ROLES:</p>
           <p className={styles.roles}>
-            UX/UI Designer ・ Brand Identity ・ Frontend Developer
+            UX/UI Designer ・ Brand Identity ・ NoCode Developer
           </p>
           <p className={styles.subtitle}>PLATFORM:</p>
           <p className={styles.roles}>Mobile Web / Desktop</p>
@@ -158,15 +158,14 @@ const CaseStudyThree = ({ project }) => {
         </div>
         <div>
           <p className={`${styles.description} ${styles.roles}`}>
-            Basándome en los conocimientos recopilados durante las fases de
-            inmersión y estrategia de diseño, diseñé un sitio web atractivo y
-            fácil de usar. Para transmitir una sensación de calidez y
-            proporcionar una buena legibilidad, incorporamos elementos de diseño
-            como una paleta de colores cuidadosamente elaborada, espacios claros
-            significativos e imágenes con miembros de la comunidad. Además,
-            optimizamos el sitio web con enfoque mobile first e incluyendo
-            varios dispositivos como tablets y portátiles, para ofrecer una
-            excelente experiencia a cada usuario.
+            Basándome en los conocimientos recopilados durante las fases de inmersión
+            y estrategia de diseño, seleccioné el sistema de diseño Material Design 3
+            de Google para crear un sitio web atractivo, fácil de usar y que transmitiera calidez.
+            La paleta de colores fue cuidadosamente elaborada, con espacios claros significativos e
+            imágenes con miembros de la comunidad, creando una experiencia visual y emocionalmente
+            cercana para los usuarios. Además optimizamos el sitio web con un enfoque mobile first,
+            priorizando la experiencia en dispositivos móviles, e incluyendo también la visualización
+            en tablets y portátiles, para ofrecer una experiencia excepcional a cada usuario.
           </p>
           <ul className={`${styles.description} ${styles.roles}`}>
             What I did:
@@ -204,14 +203,14 @@ const CaseStudyThree = ({ project }) => {
         />
       </div>
       <div className="flex justify-between">
-        <div className={styles.image}>
+       <div className={styles.image}>
           <ImageNext
             unoptimized
             src="/Images/grid.png"
             width={400}
             height={700}
           />
-        </div>
+        </div> 
         <div>
           <ImageNext
             unoptimized
