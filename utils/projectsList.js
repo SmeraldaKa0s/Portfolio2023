@@ -19,7 +19,7 @@ const projectsList = [
     id: "primavera",
     number: "003",
     title: "Primavera - Web Design",
-    image: "/Images/wallpapper.png",
+    image: "/Images/fondo2.svg",
     year: "2021",
     caption: "UX/UI Design",
   },
