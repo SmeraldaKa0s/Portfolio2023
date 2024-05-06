@@ -13,7 +13,7 @@ const projectsList = [
     title: "Fireboard - Web Design",
     image: "/Images/wallpapper1.png",
     year: "2021",
-    caption: "UX/UI Design, Brand identity",
+    caption: "Product Design, UX/UI Design, Brand identity",
   },
   {
     id: "primavera",
@@ -21,7 +21,7 @@ const projectsList = [
     title: "Primavera - Web Design",
     image: "/Images/wallpapper.png",
     year: "2021",
-    caption: "UX/UI Design",
+    caption: "Product Design, UX/UI Design",
   },
 ];
 
