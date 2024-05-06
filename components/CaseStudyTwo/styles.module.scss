@@ -5,3 +5,40 @@
 .margin {
     @apply mt-24;
 }
+
+.text {
+    @apply text-yellow-400;
+}
+
+.boxInfo {
+    @apply flex justify-evenly mt-24 text-base;
+}
+
+.description {
+    @apply max-w-3xl;
+
+    em {
+        font-style: italic;
+    }
+}
+
+.main {
+    @apply text-2xl;
+}
+
+.tldr {
+    @apply text-zinc-400 mt-8 cursor-pointer;
+}
+
+.boxRoles {
+    @apply max-w-md;
+}
+
+.subtitle {
+    @apply my-2 font-semibold;
+}
+
+.roles {
+    @apply mb-8;
+}
+
